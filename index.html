@@ -15,6 +15,7 @@
 </head>
 
 <header>
+
     <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbarup">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01"
             aria-expanded="false" aria-label="Toggle navigation">
@@ -29,17 +30,19 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Sobre mí</a>
+                    <a class="nav-link" onclick="aMi()">Sobre mí</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link disabled" href="#">Proyectos</a>
+                    <a class="nav-link disabled" onclick="aProyectos()">Proyectos</a>
                 </li>
             </ul>
         </div>
     </nav>
-    <!--  <div class="col-md-12" id="headerName">
-        Constanza García  -->
-    </div>
+    <!--  
+   <div class="col-md-12" id="headerName">
+        Constanza García 
+    </div>  -->
+
 
 </header>
 
@@ -71,6 +74,18 @@
                     Quién soy </h2>
             </div>
         </div>
+
+        <div class="row">
+            <div class="col-12 col-lg-6 quienSoy">
+                <p>
+                    Periodista con experiencia en plataformas webs y redes sociales.
+                </p>
+                <p>
+                    Descubrí el mundo del UX gracias Laboratoria Chile. Gracias a ello pude desarrollar mis habilidades de investigación, diseño
+                </p>
+            </div>
+
+        </div>
     </div>
 
     <div class="container-fluid divDisplayNone" id="contenedorAboutMe">
@@ -88,13 +103,17 @@
 
     <div class="container-fluid divDisplayNone" id="contenedorProyectos">
 
-        <div class="row">
+        <div class="row" id="proyectos">
             <div class="col-12">
                 <h1>
                     Proyectos
                 </h1>
             </div>
         </div>
+
+
+        <iframe src="https://marvelapp.com/e9a1g69?emb=1&iosapp=false&frameless=false" width="390" height="755" allowTransparency="true"
+            frameborder="0"></iframe>
 
     </div>
 
