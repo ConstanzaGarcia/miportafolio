@@ -3,8 +3,10 @@
 }
 
 .imagenPortada {
-  background-image: url(src/img/1_tNg_XU3Fj_sEWowVuedQZA.jpeg);
+  background-image: url(assets/img/flores.jpg);
+  background-position: center;
   color: black;
+  padding: 12%;
 }
 
 #contenedorAboutMe {
