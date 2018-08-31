@@ -29,11 +29,20 @@
                         <span class="sr-only">(current)</span>
                     </a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item active">
                     <a class="nav-link" onclick="aMi()">Sobre mí</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" onclick="aProyectos()">Proyectos</a>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" onclick="aProyectos()" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Proyectos
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">MarketPlace</a>
+                        <a class="dropdown-item" href="#">Red Social</a>
+                        <a class="dropdown-item" href="#">Registro de personas</a>
+                    </div>
                 </li>
             </ul>
         </div>
@@ -101,22 +110,92 @@
     </div>
 
 
-    <div class="container-fluid divDisplayNone" id="contenedorProyectos">
+    <div class="container-fluid animated.fadeOutUp" id="contenedorProyectos">
 
         <div class="row" id="proyectos">
             <div class="col-12">
                 <h1>
                     Proyectos
                 </h1>
+
+                <p>Descripción de general de los proyectos que hemos realizado durante el Bootcamp.</p>
             </div>
         </div>
+        <section class="MarketPlace">
+            <div class="row" id="marketDescription">
+                <div class="col-sm">
+                    <h1>
+                        MarketPlace
+                    </h1>
+
+                    <p>Un proyecto para la Asociación Nacional de Pequeños Emprendedores</p>
+                </div>
+            </div>
+
+            <div class="row">
+
+                <div class="col-md-6 offset-md-3">
 
 
-        <iframe src="https://marvelapp.com/e9a1g69?emb=1&iosapp=false&frameless=false" width="390" height="755" allowTransparency="true"
-            frameborder="0"></iframe>
+
+
+
+
+                    <iframe src="https://marvelapp.com/e9a1g69?emb=1&iosapp=false&frameless=false" width="390" height="755" allowTransparency="true"
+                        frameborder="0"></iframe>
+                </div>
+            </div>
+        </section>
+
+        <section class="redSocial">
+            <div class="row" id="socialDescription">
+                <div class="col-sm">
+                    <h1>
+                        Red social : Celibook
+                    </h1>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="registroIf">
+
+            <div class="row" id="registerDescription">
+                <div class="col-sm">
+                    <h1>
+                        Sistema de Registro de visitas
+                    </h1>
+                    <p>Un proyecto para If Blanco Recoleta</p>
+                </div>
+            </div>
+
+        </section>
 
     </div>
 
+
+    <footer>
+
+        <div class="row">
+
+            <div class="col-4">
+                <a href="https://www.linkedin.com/in/constanza-garcia-madrid/">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+            <div class="col-4">
+                <a href="o.conii.o@gmail.com">
+                    <i class="fas fa-envelope-square"></i>
+                </a>
+            </div>
+            <div class="col-4">
+                <a href="https://www.twitter.com/abretubocaa">
+                    <i class="fab fa-twitter-square"></i>
+                </a>
+            </div>
+        </div>
+
+    </footer>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
