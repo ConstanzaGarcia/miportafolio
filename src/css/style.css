@@ -2,12 +2,18 @@
   background-color: #AA4465!important;
 }
 
+.imagenPortada {
+  background-image: url(src/img/1_tNg_XU3Fj_sEWowVuedQZA.jpeg);
+  color: black;
+}
+
 #contenedorAboutMe {
   background-color: #ffffff;
   padding-top: 100px;
   padding-bottom: 100px;
   width: 100%;
   text-align: center;
+  padding: 5%;
 }
 
 .quienSoy {

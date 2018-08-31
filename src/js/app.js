@@ -10,12 +10,13 @@ function aProyectos() {
 }
 
 function aMi() {
-  location.href = "#contenedorAboutMe";
+  location.href = "#aboutMe";
 }
 
 function marketPlace() {
   location.href = "#malaMadre";
 }
+
 function redSocial() {
   location.href = "#celiBook";
 }
