@@ -2,8 +2,8 @@
   background-color: #AA4465!important;
 }
 
-.imagenPortada {
-  background-image: url(assets/img/flores.jpg);
+.portada {
+  background-image: url("../../assets/img/flores.jpg");
   background-position: center;
   color: black;
   padding: 12%;
