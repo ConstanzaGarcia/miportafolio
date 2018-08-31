@@ -1,8 +1,9 @@
-setTimeout(function hide() {
+/* setTimeout(function hide() {
   $('#pantallaUno').hide('fast');
   document.getElementById('contenedorPortafolioGeneral').style.display = 'block';
-}, 3500);
+}, 3500); */
 
+/*Para llamar a cada sección del portafolio*/
 
 function aProyectos() {
   location.href = "#contenedorProyectos";
@@ -10,4 +11,19 @@ function aProyectos() {
 
 function aMi() {
   location.href = "#contenedorAboutMe";
+}
+
+function marketPlace() {
+  location.href = "#malaMadre";
+}
+function redSocial() {
+  location.href = "#celiBook";
+}
+
+function registroPersonas() {
+  location.href = "#ifBlanco";
+}
+
+function footer() {
+  location.href = "#contacto";
 }

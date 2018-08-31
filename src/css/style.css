@@ -1,45 +1,41 @@
 .bg-light {
-    background-color: #AA4465!important;
-}
-
-#contenedorPortafolioGeneral {
-    background-color: #ffffff;
-    padding-top: 100px;
-    padding-bottom: 100px;
-    width: 100%;
+  background-color: #AA4465!important;
 }
 
 #contenedorAboutMe {
-    background-color: #000000;
-    padding-top: 100px;
-    padding-bottom: 100px;
-}
-
-#contenedorProyectos {
-    background-color: #FFD9DA;
-    padding-top: 100px;
-    padding-bottom: 100px;
+  background-color: #ffffff;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  width: 100%;
+  text-align: center;
 }
 
 .quienSoy {
-    text-align: center;
+  text-align: center;
+}
+
+#contenedorProyectos {
+  background-color: #FFD9DA;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  text-align: center;
 }
 
 footer {
-    background-color: #AA4465;
-    color: white;
-    padding: 2%;
-    text-align: center;
+  background-color: #AA4465;
+  color: white;
+  padding: 2%;
+  text-align: center;
 }
 
 a {
-    color: white;
+  color: white;
 }
 
 a:hover {
-    color:purple;
+  color: purple;
 }
 
 a:active {
-    color:black;
+  color: black;
 }
