@@ -1,12 +1,14 @@
 .bg-light {
   background-color: #AA4465!important;
+  color: white;
 }
 
 .portada {
   background-image: url("../../assets/img/flores.jpg");
   background-position: center;
   color: black;
-  padding: 12%;
+  padding: 15%;
+  width: 100%;
 }
 
 #contenedorAboutMe {
