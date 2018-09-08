@@ -2,49 +2,58 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-        crossorigin="anonymous">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-        crossorigin="anonymous">
-    <link rel="stylesheet" href="src/css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="src/css/style.css">
 
-    <title>Constanza García</title>
+  <title>Constanza García</title>
 </head>
 
 <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbarup">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01"
-            aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-            <a class="navbar-brand" href="#">Constanza García</a>
-            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home
-                        <span class="sr-only">(current)</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Sobre mí</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="#">Proyectos</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <!--  <div class="col-md-12" id="headerName">
-        Constanza García  -->
-    </div>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbarup">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+      <a class="navbar-brand" onclick="aHome()">Constanza García</a>
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
 
+        <li class="nav-item active">
+          <a class="nav-link" onclick="aMi()">Sobre mí</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" onclick="aProyectos()" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Proyectos
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" onclick="marketPlace()">MarketPlace</a>
+            <a class="dropdown-item" onclick="redSocial()">Red Social</a>
+            <a class="dropdown-item" onclick="registroPersonas()">Registro de personas</a>
+          </div>
+        </li>
+
+        <li class="nav-item active">
+          <a class="nav-link" onclick="footer()">Contacto</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!--  
+   <div class="col-md-12" id="headerName">
+        Constanza García 
+    </div>  -->
 </header>
 
 <body>
-    <div id="pantallaUno">
+  <!-- <div id="pantallaUno">
         <div class="row">
             <div class="col-sm-12">
                 <h3 id="title1">Constanza García</h3>
@@ -59,53 +68,179 @@
                 </p>
             </div>
         </div>
-    </div>
+    </div>  -->
 
-
-
-    <div class="container-fluid divDisplayNone" id="contenedorPortafolioGeneral">
-
-        <div class="row">
-            <div class="col-12">
-                <h2>
-                    Quién soy </h2>
-            </div>
+  <div class="container-fluid portada" id="home">
+    <section class="imagenPortada">
+      <div class="row">
+        <div class="col-12 col-lg-12">
+          <h1>
+            Constanza García
+          </h1>
         </div>
+      </div>
+    </section>
+  </div>
+
+  <div class="container-fluid" id="aboutMe">
+    <div class="row">
+      <div class="col-12">
+        <h2>
+         Sobre mí
+        </h2>
+      </div>
     </div>
 
-    <div class="container-fluid divDisplayNone" id="contenedorAboutMe">
+    <div class="row">
+      <div class="col-6 col-lg-6 quienSoy">
+        <p>
+          Periodista con experiencia en plataformas webs y redes sociales.
+        </p>
+        <p>
+          Descubrí el mundo del UX gracias Laboratoria Chile. Gracias a ello pude desarrollar mis habilidades de investigación, entrevistas, diseño de prototipos y test.
+        </p>
+      </div>
 
-        <div class="row">
-            <div class="col-12">
-                <h3>
-                    Proceso de investigación
-                </h3>
-            </div>
+      <div class="col-6 col-lg-6 quienSoy">
+        <p>
+          Aca imagen </p>
+        <p>
+          Quizás también imagen </p>
+      </div>
+
+    </div>
+
+
+
+
+
+  </div>
+
+  <!--  <div class="container-fluid divDisplayNone" id="contenedorAboutMe">
+
+    <div class="row">
+      <div class="col-12">
+        <h3>
+          Proceso de investigación
+        </h3>
+      </div>
+    </div>
+
+  </div>
+
+   -->
+
+
+  <div class="container-fluid animated.fadeOutUp" id="contenedorProyectos">
+
+    <div class="row" id="proyectos">
+      <div class="col-12">
+        <h1>
+          Proyectos
+        </h1>
+
+        <p>Descripción de general de los proyectos que hemos realizado durante el Bootcamp.</p>
+      </div>
+    </div>
+    <section class="markeplace" id="malaMadre">
+      <div class="row" id="marketDescription">
+        <div class="col-sm">
+          <h1>
+            MarketPlace
+          </h1>
+
+          <p>Un proyecto para la Asociación Nacional de Pequeños Emprendedores</p>
         </div>
+      </div>
 
-    </div>
+      <div class="row">
 
+        <div class="col-md-6 offset-md-3">
 
-    <div class="container-fluid divDisplayNone" id="contenedorProyectos">
-
-        <div class="row">
-            <div class="col-12">
-                <h1>
-                    Proyectos
-                </h1>
-            </div>
+          <iframe src="https://marvelapp.com/e9a1g69?emb=1&iosapp=false&frameless=false" width="390" height="755" allowTransparency="true"
+            frameborder="0"></iframe>
         </div>
+      </div>
+    </section>
 
+    <section class="redSocial" id="celiBook">
+      <div class="row" id="socialDescription">
+        <div class="col-sm">
+          <h1>
+            Red social : Celibook
+          </h1>
+        </div>
+      </div>
+
+
+      <div class="row">
+
+        <div class="col-md-6 offset-md-3">
+
+          <iframe style="border: none;" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F0rc4en5mN6XT8Ts4jB6Ejoll%2FRed-Social-Celiacos-Version-Mobile%3Fnode-id%3D0%253A1%26scaling%3Dmin-zoom"
+            allowfullscreen></iframe>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="registroPersonas" id="ifBlanco">
+
+      <div class="row" id="registerDescription">
+        <div class="col-sm">
+          <h1>
+            Sistema de Registro de visitas
+          </h1>
+          <p>Un proyecto para If Blanco Recoleta</p>
+        </div>
+      </div>
+
+
+
+      <div class="row">
+
+        <div class="col-md-6 offset-md-3">
+
+          <iframe style="border: none;" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FNe4eY479vjm6mAxndG9R9J0Q%2FRegistro-IF%3Fnode-id%3D1%253A2%26scaling%3Dscale-down"
+            allowfullscreen></iframe>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+
+  <footer id="contacto">
+
+    <div class="row">
+
+      <div class="col-4">
+        <a href="https://www.linkedin.com/in/constanza-garcia-madrid/">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </div>
+      <div class="col-4">
+        <a href="o.conii.o@gmail.com">
+          <i class="fas fa-envelope-square"></i >
+        </a>
+      </div>
+      <div class="col-4">
+        <a href="https://www.twitter.com/abretubocaa">
+          <i class="fab fa-twitter-square"></i>
+        </a>
+      </div>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-        crossorigin="anonymous"></script>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
 
-    <script src="src/js/app.js"></script>
+  <script src="src/js/app.js"></script>
 
 </body>
 

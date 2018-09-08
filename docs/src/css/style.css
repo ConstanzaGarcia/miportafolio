@@ -1,22 +1,51 @@
 .bg-light {
-    background-color:#AA4465!important;
+  background-color: #AA4465!important;
+  color: white;
 }
 
-#contenedorPortafolioGeneral {
-    background-color: #ffffff;
-    padding-top: 100px;
-    padding-bottom: 100px;
-    width: 100%;
+.portada {
+  background-image: url("../../assets/img/flores.jpg");
+  background-position: center;
+  color: black;
+  padding: 15%;
+  width: 100%;
 }
 
 #contenedorAboutMe {
-    background-color:#000000;
-    padding-top: 100px;
-    padding-bottom: 100px;
+  background-color: #ffffff;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  width: 100%;
+  text-align: center;
+  padding: 5%;
+}
+
+.quienSoy {
+  text-align: center;
 }
 
 #contenedorProyectos {
-    background-color: #FFD9DA;
-    padding-top: 100px;
-    padding-bottom: 100px;
+  background-color: #FFD9DA;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  text-align: center;
+}
+
+footer {
+  background-color: #AA4465;
+  color: white;
+  padding: 2%;
+  text-align: center;
+}
+
+a {
+  color: white;
+}
+
+a:hover {
+  color: purple;
+}
+
+a:active {
+  color: black;
 }
