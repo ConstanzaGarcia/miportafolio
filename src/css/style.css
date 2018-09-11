@@ -49,3 +49,90 @@ a:hover {
 a:active {
   color: black;
 }
+
+/* Invisible texto */
+
+figcaption {
+  display: none;
+  transition: all .5s;
+}
+
+/* Visible texto */
+
+figure:hover>figcaption {
+  display: block;
+  transition: all .5s;
+}
+
+/* otro ejemplo */
+
+.div-imagen {
+  display: inline-block;
+  position: relative;
+}
+
+.div-imagen>div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  padding: 10px;
+  margin: 0;
+}
+
+.desvanecer:hover {
+  opacity: 0.07;
+  -webkit-transition: opacity 500ms;
+  -moz-transition: opacity 500ms;
+  -o-transition: opacity 500ms;
+  -ms-transition: opacity 500ms;
+  transition: opacity 500ms;
+}
+
+/* otro */
+
+.img-container {
+  width: 200px;
+  height: 150px;
+  padding: 10px 10px 30px 10px;
+  background: #fff;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.img-container:before {
+  content: '';
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  background: #fff;
+  opacity: 0;
+  transition: opacity .1s ease-out;
+}
+
+.img-container:hover:before {
+  opacity: 1;
+}
+
+.img-container .text-container {
+  width: inherit;
+  padding: 5px 15px;
+  color: #444;
+  position: absolute;
+  top: 100%;
+}
+
+.img-container:hover .text-container {
+  top: 0;
+}
+
+p {
+  color: #888;
+  font-size: .75em;
+  line-height: .2em;
+}
+
+i {
+  font-style: normal;
+}
