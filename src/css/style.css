@@ -1,3 +1,10 @@
+/* Fuente tExto
+font-family: 'Oswald', sans-serif;
+font-family: 'Roboto', sans-serif;
+
+*/
+
+
 .bg-light {
   background-color: #AA4465!important;
   color: white;
@@ -54,12 +61,14 @@
   color: black;
   text-align: center;
   font-size: 75px;
+  font-family: 'Oswald'; 
 }
 
 #ux {
   color: #444;
   text-align: center;
   font-size: 50px;
+  font-family:'Roboto'; 
 }
 
 .fadeIn {
@@ -85,20 +94,16 @@
   }
 }
 
-
-
-
 #contenedorAboutMe {
   background-color: #ffffff;
-  padding-top: 100px;
-  padding-bottom: 100px;
   width: 100%;
-  text-align: center;
-  padding: 5%;
+  padding: 10%;
 }
 
-.quienSoy {
-  text-align: center;
+#perfil {
+    border: 2px solid #cc2970;
+    padding: 10px;
+    border-radius: 25px;
 }
 
 #contenedorProyectos {

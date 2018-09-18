@@ -9,8 +9,9 @@
     crossorigin="anonymous">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
     crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" media="all" href="src/css/animate.css">
-<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Oswald|Roboto" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" media="all" href="src/css/animate.css">
+  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
   <link rel="stylesheet" href="src/css/style.css">
 
   <title>Constanza García</title>
@@ -23,7 +24,7 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-      <a class="navbar-brand" onclick="aHome()">Constanza García</a>
+      <a class="navbar-brand" onclick="aHome()">Constanza</a>
       <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
 
         <li class="nav-item active">
@@ -39,6 +40,8 @@
             <a class="dropdown-item" onclick="marketPlace()">MarketPlace</a>
             <a class="dropdown-item" onclick="redSocial()">Red Social</a>
             <a class="dropdown-item" onclick="registroPersonas()">Registro de personas</a>
+            <a class="dropdown-item" onclick="registroPersonas()">Mis Finanzas</a>
+
           </div>
         </li>
 
@@ -75,9 +78,11 @@
   <div class="container-fluid portada" id="home">
     <section class="imagenPortada">
       <div class="row">
-        <div class="col-12 col-lg-12">
+        <div class="col-md-12">
           <h1 class="animated fadeIn" id="coni">
-            Constanza García
+            <b>
+              Constanza García
+            </b>
           </h1>
           <p class="animated fadeIn" id="ux">UX designer</p>
         </div>
@@ -85,59 +90,68 @@
     </section>
   </div>
 
-  <div class="container-fluid" id="aboutMe">
+  <div class="container-fluid" id="contenedorAboutMe">
+
     <div class="row">
-      <div class="col-12">
+      <div class="col-md-7">
         <h2>
-         Sobre mí
+          Sobre mí
         </h2>
+        Ux Design y periodista con experiencia en redacción digital y administración de redes sociales. Con alta capacidad para investigar
+        y reconocer las necesidades de los usuarios. En mi experiencia he aprendido a utilizar herramientas de diseño, metodología
+        ágil y gestión de procesos. Investiación centrada en el usuario es mi fuerte, tengo muchas ganas de aprender que
+        pasa si sigo escribiendo porque el rexto se pone asi y sigo escribiendio demasiado rato para llenar este espaccioo
+        ado rato para llenar este espacciooado rato para llenar este espaccioo
+
+
+      </div>
+      <div class="col-md-5">
+        <img src="assets/img/WhatsApp Image 2018-09-07 at 14.09.11 (1).jpeg" id="perfil" style="width: 18rem" />
       </div>
     </div>
 
     <div class="row">
-      <div class="col-6 col-lg-6 quienSoy">
-        <p>
-          Periodista con experiencia en plataformas webs y redes sociales.
-        </p>
-        <p>
-          Descubrí el mundo del UX gracias Laboratoria Chile. Gracias a ello pude desarrollar mis habilidades de investigación, entrevistas, diseño de prototipos y test.
-        </p>
+      <div class="col-md-3">
+        <figure>
+          <img src="assets/img/pataperro.png" alt="Smiley face" width="100px" height="100px" />
+          <figcaption> Tengo siete perros rescatados </figcaption>
+        </figure>
       </div>
-
-      <div class="col-6 col-lg-6 quienSoy">
-        <p>
-          Aca imagen </p>
-        <p>
-          Quizás también imagen </p>
+      <div class="col-md-3">
+        <figure>
+          <img src="assets/img/cocinar.png" alt="Smiley face" width="100px" height="100px" />
+          <figcaption> Me gusta cocinar para amigos </figcaption>
+        </figure>
+      </div>
+      <div class="col-md-3">
+        <figure>
+          <img src="assets/img/aprender.png" alt="Smiley face" width="100px" height="100px" />
+          <figcaption> Estoy en constante autoapendizaje </figcaption>
+        </figure>
+      </div>
+      <div class="col-md-3">
+        <figure>
+          <img src="assets/img/aprender.png" alt="Smiley face" width="100px" height="100px" />
+          <figcaption> Estoy en constante autoapendizaje </figcaption>
+        </figure>
       </div>
 
     </div>
+  </div>
 
-
+  <div class="container-fluid" id="containerAbility">
 
 
 
   </div>
 
-  <!--  <div class="container-fluid divDisplayNone" id="contenedorAboutMe">
-
-    <div class="row">
-      <div class="col-12">
-        <h3>
-          Proceso de investigación
-        </h3>
-      </div>
-    </div>
-
-  </div>
-
-   -->
 
 
   <div class="container-fluid animated.fadeOutUp" id="contenedorProyectos">
 
     <div class="row" id="proyectos">
-      <div class="col-12">
+
+      <div class="col-md-12">
         <h1>
           Proyectos
         </h1>
@@ -160,19 +174,20 @@
 
         <div class="col-md-6 offset-md-3">
 
-            <div class="img-container">
-                
-            </div>
+          <div class="img-container">
 
-            <div class="img-container">
-                <img src="assets/img marketplace/proyecto.PNG">
-                <div class="text-container">
-                  <h4>Titulo</h4>
-                  <p>Texto de prueba</p>
-                  <p>Texto de prueba</p>
-                </div>
-                <i>icons | icons | icons |<i/>
-              </div>
+          </div>
+
+          <div class="img-container">
+            <img src="assets/img marketplace/proyecto.PNG">
+            <div class="text-container">
+              <h4>Titulo</h4>
+              <p>Texto de prueba</p>
+              <p>Texto de prueba</p>
+            </div>
+            <i>icons | icons | icons |
+              <i/>
+          </div>
 
         </div>
       </div>
@@ -192,10 +207,10 @@
 
         <div class="col-md-6 offset-md-3">
 
-            <figure>
-                <img src="assets/img marketplace/proyecto.PNG" alt="Smiley face" width="42" height="42" />
-                <figcaption>Tu texto</figcaption>
-              </figure>
+          <figure>
+            <img src="assets/img marketplace/proyecto.PNG" alt="Smiley face" width="100px" height="100px" />
+            <figcaption> Tengo siete perros </figcaption>
+          </figure>
 
         </div>
       </div>
@@ -217,12 +232,12 @@
       <div class="row">
 
         <div class="col-md-6 offset-md-3">
-            <div class="div-imagen">
-                <div>
-                    Descripción de la foto que quieres que se muestre
-                </div>
-                <img class="desvanecer" src="assets/img marketplace/proyecto.PNG" />
-              </div>
+          <div class="div-imagen">
+            <div>
+              Descripción de la foto que quieres que se muestre
+            </div>
+            <img class="desvanecer" src="assets/img marketplace/proyecto.PNG" width="100px" height="100px" />
+          </div>
         </div>
       </div>
 
@@ -242,7 +257,7 @@
       </div>
       <div class="col-4">
         <a href="o.conii.o@gmail.com">
-          <i class="fas fa-envelope-square"></i >
+          <i class="fas fa-envelope-square"></i>
         </a>
       </div>
       <div class="col-4">
