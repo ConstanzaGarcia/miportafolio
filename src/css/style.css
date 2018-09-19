@@ -4,7 +4,6 @@ font-family: 'Roboto', sans-serif;
 
 */
 
-
 .bg-light {
   background-color: #AA4465!important;
   color: white;
@@ -61,14 +60,14 @@ font-family: 'Roboto', sans-serif;
   color: black;
   text-align: center;
   font-size: 75px;
-  font-family: 'Oswald'; 
+  font-family: 'Oswald';
 }
 
 #ux {
   color: #444;
   text-align: center;
   font-size: 50px;
-  font-family:'Roboto'; 
+  font-family: 'Roboto';
 }
 
 .fadeIn {
@@ -101,9 +100,33 @@ font-family: 'Roboto', sans-serif;
 }
 
 #perfil {
-    border: 2px solid #cc2970;
-    padding: 10px;
-    border-radius: 25px;
+  border: 2px solid #cc2970;
+  padding: 10px;
+  border-radius: 25px;
+}
+
+#containerAbility {
+  background-color: #c6548b;
+  width: 100%;
+  padding: 10%;
+}
+
+.porcentaje {
+  width: 100px;
+  height: 100px;
+  background: #888;
+  -webkit-transition: width 2s linear 1s;
+  transition: width 2s linear 1s;
+  color: #fff
+}
+
+porcentaje:hover {
+  width: 300px;
+}
+
+.bounceInUp {
+  -webkit-animation-name: bounceInUp;
+  animation-name: bounceInUp;
 }
 
 #contenedorProyectos {
