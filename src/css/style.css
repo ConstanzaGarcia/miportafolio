@@ -7,8 +7,8 @@ font-family: 'Roboto', sans-serif;
 /*Barra superior*/
 
 .bg-light {
-  background-color: #AA4465!important;
-  color: white;
+  background-color: #ffffff!important;
+  color:#AA4465;
 }
 
 /*Portada*/
@@ -105,6 +105,10 @@ font-family: 'Roboto', sans-serif;
   background-color: #ffffff;
   width: 100%;
   padding: 10%;
+  align-content: center;
+  text-align: center;
+  height: 100%;
+
 }
 
 #perfil {
@@ -119,6 +123,8 @@ font-family: 'Roboto', sans-serif;
   background-color: #c6548b;
   width: 100%;
   padding: 10%;
+  align-content: center;
+  text-align: center;
 }
 
 .porcentaje {
@@ -142,7 +148,7 @@ porcentaje:hover {
 }
 
 #contenedorProyectos {
-  background-color: #FFD9DA;
+  background-color: #ffffff;
   padding-top: 100px;
   padding-bottom: 100px;
   text-align: center;
