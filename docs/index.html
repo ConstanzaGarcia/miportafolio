@@ -9,19 +9,22 @@
     crossorigin="anonymous">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
     crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Oswald|Roboto" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" media="all" href="src/css/animate.css">
+  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
   <link rel="stylesheet" href="src/css/style.css">
 
   <title>Constanza García</title>
 </head>
 
 <header>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbarup">
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light" id="navbarup">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01"
       aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-      <a class="navbar-brand" onclick="aHome()">Constanza García</a>
+      <a class="navbar-brand" onclick="aHome()">Constanza</a>
       <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
 
         <li class="nav-item active">
@@ -34,9 +37,11 @@
             Proyectos
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" onclick="marketPlace()">MarketPlace</a>
-            <a class="dropdown-item" onclick="redSocial()">Red Social</a>
-            <a class="dropdown-item" onclick="registroPersonas()">Registro de personas</a>
+            <a class="dropdown-item" href="marketplace.html" onclick="marketPlace()">MarketPlace</a>
+            <a class="dropdown-item" href="redsocial.html" onclick="redSocial()">Red Social</a>
+            <a class="dropdown-item" href="registroif.html" onclick="registroPersonas()">Registro de personas</a>
+            <a class="dropdown-item" href="misfinanzas.html" onclick="registroPersonas()">Mis Finanzas</a>
+
           </div>
         </li>
 
@@ -73,144 +78,173 @@
   <div class="container-fluid portada" id="home">
     <section class="imagenPortada">
       <div class="row">
-        <div class="col-12 col-lg-12">
-          <h1>
-            Constanza García
+        <div class="col-md-12">
+          <h1 class="animated fadeIn" id="coni">
+            <b>
+              Constanza García
+            </b>
           </h1>
+          <p class="animated fadeIn" id="ux">UX designer</p>
         </div>
       </div>
     </section>
   </div>
 
-  <div class="container-fluid" id="aboutMe">
+  <div class="container-fluid" id="contenedorAboutMe">
+
     <div class="row">
-      <div class="col-12">
+      <div class="col-md-7">
         <h2>
-         Sobre mí
+          Sobre mí
         </h2>
+        Ux Design y periodista con experiencia en redacción digital y administración de redes sociales. Con alta capacidad para investigar
+        y reconocer las necesidades de los usuarios. En mi experiencia he aprendido a utilizar herramientas de diseño, metodología
+        ágil y gestión de procesos. Investiación centrada en el usuario es mi fuerte, tengo muchas ganas de aprender que
+        pasa si sigo escribiendo porque el rexto se pone asi y sigo escribiendio demasiado rato para llenar este espaccioo
+        ado rato para llenar este espacciooado rato para llenar este espaccioo
+
+
+      </div>
+      <div class="col-md-5">
+        <img class="img-fluid" src="assets/img/WhatsApp Image 2018-09-07 at 14.09.11 (1).jpeg" id="perfil" style="width: 18rem" />
       </div>
     </div>
 
     <div class="row">
-      <div class="col-6 col-lg-6 quienSoy">
-        <p>
-          Periodista con experiencia en plataformas webs y redes sociales.
-        </p>
-        <p>
-          Descubrí el mundo del UX gracias Laboratoria Chile. Gracias a ello pude desarrollar mis habilidades de investigación, entrevistas, diseño de prototipos y test.
-        </p>
+      <div class="col-md-3">
+        <figure>
+          <img class="img-fluid" src="assets/img/pataperro.png" alt="Smiley face" width="100px" height="100px" />
+          <figcaption> Tengo siete perros rescatados </figcaption>
+        </figure>
       </div>
-
-      <div class="col-6 col-lg-6 quienSoy">
-        <p>
-          Aca imagen </p>
-        <p>
-          Quizás también imagen </p>
+      <div class="col-md-3">
+        <figure>
+          <img class="img-fluid" src="assets/img/cocinar.png" alt="Smiley face" width="100px" height="100px" />
+          <figcaption> Me gusta cocinar para amigos </figcaption>
+        </figure>
+      </div>
+      <div class="col-md-3">
+        <figure>
+          <img src="assets/img/aprender.png" alt="Smiley face" width="100px" height="100px" />
+          <figcaption> Estoy en constante autoapendizaje </figcaption>
+        </figure>
+      </div>
+      <div class="col-md-3">
+        <figure>
+          <img src="assets/img/escribir.png" alt="Smiley face" width="100px" height="100px" />
+          <figcaption> Escribo </figcaption>
+        </figure>
       </div>
 
     </div>
-
-
-
-
-
   </div>
 
-  <!--  <div class="container-fluid divDisplayNone" id="contenedorAboutMe">
+  <div class="container-fluid animated bounceInUp" id="containerAbility">
 
     <div class="row">
-      <div class="col-12">
-        <h3>
-          Proceso de investigación
-        </h3>
+      <div class="col-md-12">
+        <h2>Habilidades</h2>
+        Herramientas que se he utilizado en el desarrollo de los proyectos
       </div>
     </div>
 
+    <div class="row">
+      <div class="col-md-3">
+
+        <h3>bootstrap</h3>
+        <div class="porcentaje"> y si escribo acá se vera asi asi asi asi </div>
+      </div>
+
+      <div class="col-md-3">
+        <h3>JS</h3>
+        <div class="porcentaje"> y si escribo acá se vera asi asi asi asi </div>
+      </div>
+      <div class="col-md-3">
+        <h3>Marvel</h3>
+        <div class="porcentaje"> y si escribo acá se vera asi asi asi asi </div>
+      </div>
+      <div class="col-md-3">
+        <h3>Figma</h3>
+        <div class="porcentaje"> y si escribo acá se vera asi asi asi asi </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-3">
+        <h3>SEO</h3>
+        <div class="porcentaje"> y si escribo acá se vera asi asi asi asi </div>
+      </div>
+
+      <div class="col-md-3">
+        <h3>Google Analytics</h3>
+        <div class="porcentaje"> y si escribo acá se vera asi asi asi asi </div>
+      </div>
+      <div class="col-md-3">
+        <h3>Google Adwords</h3>
+        <div class="porcentaje"> y si escribo acá se vera asi asi asi asi </div>
+      </div>
+      <div class="col-md-3">
+        <h3>Facebook ADS</h3>
+        <div class="porcentaje"> y si escribo acá se vera asi asi asi asi </div>
+      </div>
+    </div>
   </div>
 
-   -->
 
 
-  <div class="container-fluid animated.fadeOutUp" id="contenedorProyectos">
+  <div class="container-fluid animated bounceInUp" id="contenedorProyectos">
 
     <div class="row" id="proyectos">
-      <div class="col-12">
+      <div class="col-md-12">
         <h1>
           Proyectos
         </h1>
-
-        <p>Descripción de general de los proyectos que hemos realizado durante el Bootcamp.</p>
       </div>
     </div>
-    <section class="markeplace" id="malaMadre">
-      <div class="row" id="marketDescription">
-        <div class="col-sm">
-          <h1>
-            MarketPlace
-          </h1>
 
-          <p>Un proyecto para la Asociación Nacional de Pequeños Emprendedores</p>
+
+    <div class="row">
+      <div class="col-md-6">
+        <h3>MarketPlace</h3>
+
+        <div class="div-imagen">
+          <div>
+            Proyecto para apoyar un emprendiemiento </div>
+          <img class="desvanecer img-fluid" src="assets/img marketplace/proyecto.PNG" width="450px" height="200px" />
         </div>
       </div>
 
-      <div class="row">
-
-        <div class="col-md-6 offset-md-3">
-
-          <iframe src="https://marvelapp.com/e9a1g69?emb=1&iosapp=false&frameless=false" width="390" height="755" allowTransparency="true"
-            frameborder="0"></iframe>
+      <div class="col-md-6">
+        <h3>Celibook</h3>
+        <div class="div-imagen">
+          <div>
+            Red social para personas celiacas </div>
+          <img class="desvanecer img-fluid" src="assets/img/celibook.PNG" width="450px" height="200px" />
         </div>
       </div>
-    </section>
+    </div>
 
-    <section class="redSocial" id="celiBook">
-      <div class="row" id="socialDescription">
-        <div class="col-sm">
-          <h1>
-            Red social : Celibook
-          </h1>
+    <div class="row">
+      <div class="col-md-6">
+        <h3>IF Register</h3>
+
+        <div class="div-imagen">
+          <div>
+            Sistema de registro para las visitas a IF Blanco Recoleta </div>
+          <img class="desvanecer img-fluid" src="assets/img/if.PNG" width="450px" height="200px" />
         </div>
       </div>
+      <div class="col-md-6">
 
-
-      <div class="row">
-
-        <div class="col-md-6 offset-md-3">
-
-          <iframe style="border: none;" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F0rc4en5mN6XT8Ts4jB6Ejoll%2FRed-Social-Celiacos-Version-Mobile%3Fnode-id%3D0%253A1%26scaling%3Dmin-zoom"
-            allowfullscreen></iframe>
-
-        </div>
-      </div>
-    </section>
-
-    <section class="registroPersonas" id="ifBlanco">
-
-      <div class="row" id="registerDescription">
-        <div class="col-sm">
-          <h1>
-            Sistema de Registro de visitas
-          </h1>
-          <p>Un proyecto para If Blanco Recoleta</p>
+        <h3>Mis Finanzas</h3>
+        <div class="div-imagen">
+          <div>
+            App financiera del Banco El País </div>
+          <img class="desvanecer img-fluid" src="assets/img/misfinanzas.PNG" width="450px" height="200px" />
         </div>
       </div>
 
-
-
-      <div class="row">
-
-        <div class="col-md-6 offset-md-3">
-
-          <iframe style="border: none;" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FNe4eY479vjm6mAxndG9R9J0Q%2FRegistro-IF%3Fnode-id%3D1%253A2%26scaling%3Dscale-down"
-            allowfullscreen></iframe>
-        </div>
-      </div>
-
-    </section>
-
+    </div>
   </div>
-
-
   <footer id="contacto">
 
     <div class="row">
@@ -222,7 +256,7 @@
       </div>
       <div class="col-4">
         <a href="o.conii.o@gmail.com">
-          <i class="fas fa-envelope-square"></i >
+          <i class="fas fa-envelope-square"></i>
         </a>
       </div>
       <div class="col-4">
@@ -233,6 +267,7 @@
     </div>
 
   </footer>
+
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
@@ -241,6 +276,7 @@
     crossorigin="anonymous"></script>
 
   <script src="src/js/app.js"></script>
+
 
 </body>
 

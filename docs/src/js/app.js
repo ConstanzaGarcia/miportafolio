@@ -13,7 +13,7 @@ function aProyectos() {
 }
 
 function aMi() {
-  location.href = "#aboutMe";
+  location.href = "#contenedorAboutMe";
 }
 
 function marketPlace() {

@@ -1,35 +1,160 @@
+/* Fuente tExto
+font-family: 'Oswald', sans-serif;
+font-family: 'Roboto', sans-serif;
+
+*/
+
+/*Barra superior*/
+
 .bg-light {
-  background-color: #AA4465!important;
-  color: white;
+  background-color: #ffffff!important;
+  color:#AA4465;
 }
 
-.portada {
-  background-image: url("../../assets/img/flores.jpg");
-  background-position: center;
+/*Portada*/
+
+#home {
   color: black;
-  padding: 15%;
   width: 100%;
+  padding: 10%;
+  background: linear-gradient(270deg, #cc2970, #c6548b, #eea7c9, #eec8da);
+  background-size: 800% 800%;
+  -webkit-animation: AnimationName 30s ease infinite;
+  -moz-animation: AnimationName 30s ease infinite;
+  animation: AnimationName 30s ease infinite;
 }
+
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 0% 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0% 50%
+  }
+}
+
+@-moz-keyframes AnimationName {
+  0% {
+    background-position: 0% 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0% 50%
+  }
+}
+
+@keyframes AnimationName {
+  0% {
+    background-position: 0% 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0% 50%
+  }
+}
+
+#coni {
+  color: black;
+  text-align: center;
+  font-size: 75px;
+  font-family: 'Oswald';
+}
+
+#ux {
+  color: #444;
+  text-align: center;
+  font-size: 50px;
+  font-family: 'Roboto';
+}
+
+/*Animación texto portada*/
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/*Contenedor sobre mi*/
 
 #contenedorAboutMe {
   background-color: #ffffff;
-  padding-top: 100px;
-  padding-bottom: 100px;
   width: 100%;
+  padding: 10%;
+  align-content: center;
   text-align: center;
-  padding: 5%;
+  height: 100%;
+
 }
 
-.quienSoy {
+#perfil {
+  border: 2px solid #cc2970;
+  padding: 10px;
+  border-radius: 25px;
+}
+
+/*Contenedor de habilidades*/
+
+#containerAbility {
+  background-color: #c6548b;
+  width: 100%;
+  padding: 10%;
+  align-content: center;
   text-align: center;
+}
+
+.porcentaje {
+  width: 100px;
+  height: 100px;
+  background: #888;
+  -webkit-transition: width 2s linear 1s;
+  transition: width 2s linear 1s;
+  color: #fff
+}
+
+porcentaje:hover {
+  width: 300px;
+}
+
+/*Contenedor de proyectos*/
+
+.bounceInUp {
+  -webkit-animation-name: bounceInUp;
+  animation-name: bounceInUp;
 }
 
 #contenedorProyectos {
-  background-color: #FFD9DA;
+  background-color: #ffffff;
   padding-top: 100px;
   padding-bottom: 100px;
   text-align: center;
 }
+
+/*Pie de pagina con rrss*/
 
 footer {
   background-color: #AA4465;
@@ -48,4 +173,47 @@ a:hover {
 
 a:active {
   color: black;
+}
+
+
+/* */
+
+
+/* Descripcion de interes en container de habilidades */
+
+figcaption {
+  display: none;
+  transition: all .5s;
+}
+
+/* Visible texto */
+
+figure:hover>figcaption {
+  display: block;
+  transition: all .5s;
+}
+
+/* ejemplo a usar */
+
+.div-imagen {
+  display: inline-block;
+  position: relative;
+}
+
+.div-imagen>div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  padding: 10px;
+  margin: 0;
+}
+
+.desvanecer:hover {
+  opacity: 0.30;
+  -webkit-transition: opacity 500ms;
+  -moz-transition: opacity 500ms;
+  -o-transition: opacity 500ms;
+  -ms-transition: opacity 500ms;
+  transition: opacity 500ms;
 }
