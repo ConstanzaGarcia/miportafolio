@@ -1,4 +1,10 @@
 .bg-light {
     background-color: #6BBFAB!important;
-    color:#ffff;
+    color: #ffff;
+}
+
+#home {
+    color: black;
+    width: 100%;
+    padding: 10%; 
 }

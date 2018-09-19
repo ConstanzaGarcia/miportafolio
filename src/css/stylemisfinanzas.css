@@ -7,4 +7,30 @@
     color: black;
     width: 100%;
     padding: 10%;
+    background-image: url(../../assets/imgmisfinanzas/money-256312_1920.jpg);
+    text-align: center;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    height: 90px;
+}
+
+.logoMF {
+    height: 171px;
+    margin-bottom: 100px;
+}
+
+#preambulo {
+    padding: 2%;
+}
+
+.textouno {
+    text-align: center;
+}
+
+#contexto {
+    background-color: #6BBFAB;
+    color: white;
 }
