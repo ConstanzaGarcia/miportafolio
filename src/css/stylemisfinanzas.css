@@ -26,7 +26,6 @@
     padding: 2%;
     background-color: white;
     color: #444;
-
 }
 
 #colorGreen {
@@ -47,11 +46,13 @@
 .etapas {
     text-align: center;
 }
+
 /* footer */
 
 footer {
     text-align: center;
 }
+
 a {
     color: #444;
 }
@@ -62,4 +63,18 @@ a:hover {
 
 a:active {
     color: black;
+}
+
+.testeAlto {
+    text-align: center;
+}
+
+.card-title {
+    color: #444;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color:#6BBFAB;
+    border-color: #007bff;
 }
