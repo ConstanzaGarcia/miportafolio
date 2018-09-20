@@ -22,8 +22,17 @@
     margin-bottom: 100px;
 }
 
-#preambulo {
+#colorWhite {
     padding: 2%;
+    background-color: white;
+    color: #444;
+
+}
+
+#colorGreen {
+    padding: 2%;
+    background-color: #6BBFAB;
+    color: white;
 }
 
 .textouno {
@@ -33,4 +42,24 @@
 #contexto {
     background-color: #6BBFAB;
     color: white;
+}
+
+.etapas {
+    text-align: center;
+}
+/* footer */
+
+footer {
+    text-align: center;
+}
+a {
+    color: #444;
+}
+
+a:hover {
+    color: #6BBFAB;
+}
+
+a:active {
+    color: black;
 }

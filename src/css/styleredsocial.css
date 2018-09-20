@@ -2,3 +2,24 @@
     background-color:#99CE81!important;
     color: white;
 }
+
+#home {
+    color: black;
+    width: 100%;
+    padding: 10%;
+    background-image: url(../../assets/imgredsocial/sin-gluten.jpg);
+    text-align: center;
+    /* filter:brightness(0.4); */
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    height: 90px;
+}
+
+.logoMF {
+    height: 171px;
+    margin-bottom: 100px;
+}
+
