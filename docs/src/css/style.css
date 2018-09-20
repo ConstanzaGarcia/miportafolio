@@ -8,7 +8,17 @@ font-family: 'Roboto', sans-serif;
 
 .bg-light {
   background-color: #ffffff!important;
-  color:#AA4465;
+  color: #AA4465;
+}
+
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+  color: #AA4465;
+  font-family: 'Oswald', sans-serif;
+}
+
+.navbar-light .navbar-nav .active :hover {
+  color: #444;
+
 }
 
 /*Portada*/
@@ -22,6 +32,7 @@ font-family: 'Roboto', sans-serif;
   -webkit-animation: AnimationName 30s ease infinite;
   -moz-animation: AnimationName 30s ease infinite;
   animation: AnimationName 30s ease infinite;
+  
 }
 
 @-webkit-keyframes AnimationName {
@@ -108,7 +119,6 @@ font-family: 'Roboto', sans-serif;
   align-content: center;
   text-align: center;
   height: 100%;
-
 }
 
 #perfil {
@@ -161,6 +171,7 @@ footer {
   color: white;
   padding: 2%;
   text-align: center;
+  font-size: 30px;
 }
 
 a {
@@ -168,16 +179,14 @@ a {
 }
 
 a:hover {
-  color: purple;
+  color: #444;
 }
 
 a:active {
   color: black;
 }
 
-
 /* */
-
 
 /* Descripcion de interes en container de habilidades */
 
