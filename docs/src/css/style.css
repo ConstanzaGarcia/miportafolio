@@ -70,7 +70,7 @@ font-family: 'Roboto', sans-serif;
 }
 
 #coni {
-  color: black;
+  color: white;
   text-align: center;
   font-size: 75px;
   font-family: 'Oswald';
@@ -135,16 +135,14 @@ font-family: 'Roboto', sans-serif;
   text-align: center;
 }
 
-.porcentaje {
-  width: 100px;
-  height: 100px;
-  background: #888;
-  -webkit-transition: width 2s linear 1s;
-  transition: width 2s linear 1s;
-  color: #fff
+.box {
+  background:white;
+  -webkit-transition: width 2s;
+  /* For Safari 3.1 to 6.0 */
+  transition: width 2s;
 }
 
-porcentaje:hover {
+.box:hover {
   width: 300px;
 }
 
@@ -183,6 +181,10 @@ a:active {
   color: black;
 }
 
+
+.copy {
+  font-size: 10px;
+}
 /* */
 
 /* Descripcion de interes en container de habilidades */
