@@ -19,43 +19,40 @@
 </head>
 
 <body>
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light" id="navbarup">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+      <a class="navbar-brand" href="index.html" onclick="aHome()">Constanza</a>
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+
+        <li class="nav-item active">
+          <a class="nav-link" onclick="aMi()">Sobre mí</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" onclick="aProyectos()" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Proyectos
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="marketplace.html" onclick="marketPlace()">MarketPlace</a>
+            <a class="dropdown-item" href="redsocial.html" onclick="redSocial()">Red Social</a>
+            <a class="dropdown-item" href="registroif.html" onclick="registroPersonas()">Registro de personas</a>
+            <a class="dropdown-item" href="misfinanzas.html" onclick="registroPersonas()">Mis Finanzas</a>
+
+          </div>
+        </li>
+
+        <li class="nav-item active">
+          <a class="nav-link" onclick="footer()">Contacto</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
   <header>
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light" id="navbarup">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01"
-        aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-        <a class="navbar-brand" href="index.html" onclick="aHome()">Constanza</a>
-        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-
-          <li class="nav-item active">
-            <a class="nav-link" onclick="aMi()">Sobre mí</a>
-          </li>
-
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" onclick="aProyectos()" role="button" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
-              Proyectos
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="marketplace.html" onclick="marketPlace()">MarketPlace</a>
-              <a class="dropdown-item" href="redsocial.html" onclick="redSocial()">Red Social</a>
-              <a class="dropdown-item" href="registroif.html" onclick="registroPersonas()">Registro de personas</a>
-              <a class="dropdown-item" href="misfinanzas.html" onclick="registroPersonas()">Mis Finanzas</a>
-
-            </div>
-          </li>
-
-          <li class="nav-item active">
-            <a class="nav-link" onclick="footer()">Contacto</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </header>
-
-  <div class="container-fluid portada" id="home">
     <section class="imagenPortada">
       <div class="row">
         <div class="col-md-12">
@@ -71,32 +68,28 @@
         <img class="img-fluid logoMF" src="assets/imgmisfinanzas/appfitch.png" alt="">
       </div>
     </section>
-  </div>
-
+  </header>
   <div class="container-fluid">
-    <div class="row">
-      <div class="col-12 col-lg-6 textouno">
-        <h2>Objetivo</h2>
+    <section>
+      <div class="row">
+        <div class="col-md-12 textouno">
+          <p>Hace seis meses el banco más importante del país lanzo una nueva aplicación al mercado. Esta permite a los usuarios
+            visualizar sus gastos mensuales y ahorrar. Luego de este periodo y no 100 % contentos con el resultado, contactaron
+            a nuestro equipo de UX para que los ayudemos a redefinir la dirección y evolución de este producto.</p>
+        </div>
       </div>
-    </div>
 
-    <div class="row">
-      <div class="col-md-12 textouno">
-        <p>Identificar cuáles son los factores en los que es necesario iterar para atraer a los usuarios a bajar la aplicación
-          y se mantengan activos en su uso.</p>
+      <div class="row">
+        <div class="col-md-12 textouno">
+          <p>
+            <b> Solución</b>: Crear el diseño para Android e iterar en el diseño de IOS, mejorando las funcionalidades y la usabilidad
+            de la app. </p>
+          <p>
+            <b> Duración</b>: 10 días.</p>
+        </div>
       </div>
-    </div>
-
-    <div class="row">
-      <div class="col-md-12 textouno">
-        <p>
-          <b> Solución</b>: Rediseñar el prototipo </p>
-        <p>
-          <b> Duración</b>: 10 días.</p>
-      </div>
-    </div>
   </div>
-
+  </section>
   <div class="container-fluid etapas" id="colorGreen">
     <div class="row">
       <div class="col-12">
@@ -136,33 +129,42 @@
   <div class="container-fluid" id="colorWhite">
     <div class="row">
       <div class="col-md-12 textouno">
-        <h3>Contexto</h3>
-        <p> Hace seis meses el banco más importante del país lanzo una nueva aplicación al mercado. Esta permite a los usuarios
-          visualizar sus gastos mensuales y ahorrar. Por lo que desean un nuevo diseño y plan de marketing para su trabajo.
+        <h3>Investigación</h3>
+        <p> Según los resultados de la Encuesta Financiera de Hogares (EFH) dada conocer por el Banco Central, los hogares que
+          en Chile ahorran van en aumento. Cifra que es positiva porque deja en evidencia que la población tiene conciencia
+          de que debe resguardar fondos no solo por obligación como lo es la cotización obligatoria si no a través de métodos
+          formales para ahorrar como bancos o cooperativas.
         </p>
       </div>
     </div>
 
     <div class="row">
       <div class="col-md-12  textouno">
-        <img class=" img-fluid " src="assets/imgmisfinanzas/pantallasantiguas.PNG " alt=" ">
+        <img class=" img-fluid " src="assets/imgmisfinanzas/ahorrochileactualizado.PNG" alt=" ">
       </div>
     </div>
     <div class="row">
       <div class="col-md-12 textouno">
-
+        <p>Según la data el número de personas que entran al landing es alto porque lo hacen desde cualquier dispositivo con
+          acceso a internet, pero al estar habilitada solo la aplicación para descargar desde la APP store de iPhone ese
+          porcentaje disminuye considerablemente. Esa información es desconocida para los usuarios debido a que en el landing
+          ni la publicidad lo mencionan.</p>
       </div>
     </div>
 
+    <div class="row">
+      <div class="col-md-12  textouno">
+        <img class=" img-fluid " src="assets/imgmisfinanzas/analisisdos.PNG" alt=" ">
+      </div>
+    </div>
   </div>
 
   <div class="container-fluid" id="colorGreen">
     <div class="row">
       <div class="col-md-12 textouno">
-        <p> Según los resultados de la Encuesta Financiera de Hogares (EFH) dada conocer por el Banco Central, los hogares que
-          en Chile ahorran van en aumento. Cifra que es positiva porque deja en evidencia que la población tiene conciencia
-          de que debe resguardar fondos no solo por obligación como lo es la cotización obligatoria si no a través de métodos
-          formales para ahorrar como bancos o cooperativas. </p>
+        <p> Conocer de qué forma interactúan las personas con su banco día a día y cómo utilizan la aplicación que ya existe
+          nos permitió identificar características que para ellos eran de confianza y que decidimos incluir en nuestro prototipo,
+        </p>
       </div>
     </div>
   </div>
@@ -171,191 +173,30 @@
   <div class="container-fluid" id="colorWhite">
     <div class="row">
       <div class="col-md-12 textouno">
-        Entendimiento del problema
+        Test de lo existente
       </div>
     </div>
-    <div class="row">
-      <div class="col-md-12 textouno">
-        <p>Para comenzar esta investigación revisamos la información disponible en los distintos medios nacionales para entender
-          el contexto en el que se desarrollaba esta Fitch App. </p>
-        <p>Según los resultados de la Encuesta Financiera de Hogares (EFH) dada conocer por el Banco Central, los hogares que
-          en Chile ahorran van en aumento. Cifra que es positiva porque deja en evidencia que la población tiene conciencia
-          de que debe resguardar fondos no solo por obligación como lo es la cotización obligatoria si no a través de métodos
-          formales para ahorrar como bancos o cooperativas. </p>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-12">
-        <img class="img-fluid" src="assets/imgmisfinanzas/ahorrochileactualizado.PNG" alt=" ">
-      </div>
-    </div>
-
     <div class="row">
       <div class="col-md-6">
-        <h4>Analisis de la Data</h4>
-        <p> El equipo del banco nos hizo llegar la data con las estadísticas de tráfico de su APP, con ella hicimos las siguientes
-          observaciones: Según la data el número de personas que entran al landing es alto porque lo hacen desde cualquier
-          dispositivo con acceso a internet pero al estar habilitada solo la aplicación para descargar desde la APP store
-          de iphone ese porcentaje disminuye considerablemente. Esa información es desconocida para los usuarios debido a
-          que en el landing no lo menciona.</p>
-        <p>- La información sigue reflejando que por medio de dispositivos con sistema Android las personas ingresan al landing
-          pero no logran convertir en descarga la app porque no pueden realizarla. </p>
-        <p> - Las sesiones de los usuarios son más activas cuando se lanzó la aplicación, pero existe un porcentaje que solo
-          la descargo y la dejo instalada sin utilizar.
-        </p>
-        <p> - Las sesiones duran más cuando ingresan desde un computador de escritorio con un minuto de diferencia más sobre
-          las que inician desde mobile. Esto, creemos que se debe porque las personas ingresan desde el landing y su viaje
-          hasta la descarga es más largo.
-        </p>
+        <p>Realizamos un test de usabilidad con la app existente. Ninguno de los usuarios tuvo problemas en entender las tareas
+          que se le asignaron, pero nos dimos cuenta de que les costaba ver la letra y el color. Por ello, para comenzar
+          a trabajar decidimos iterar en esos ámbitos. </p>
+        Creamos un nuevo prototipo de alta fidelidad habilitado para Android el que testeamos con personas a las que le asignamos
+        misiones para realizar dentro de la aplicación. Con ello logramos concluir cuales eran los problemas que tenía al
+        realizar ciertas acciones por lo que decimos iterar hasta llegar al producto final.
 
       </div>
 
       <div class="col-md-6">
-        <p align="center">
-          <img class="img-fluid" src="assets/imgmisfinanzas/analisisuno.PNG">
-        </p>
-
+        <iframe src="https://marvelapp.com/19aeb4g6?emb=1&iosapp=false&frameless=false" width="390" height="755" allowTransparency="true"
+          frameborder="0"></iframe>
       </div>
     </div>
+
 
   </div>
 
 
-
-
-
-
-  <div class="container-fluid" id="colorGreen">
-    <div clas="row">
-      <div class="col-md-12">
-        <h2>Entrevista</h2>
-        <p>Entrevista con Training manager Nos reunimos con Allison, training manager del equipo de desarrollo de la APP. Con
-          ella logramos conocer cuáles eran las motivaciones del banco para llevar a cabo la aplicación, quien nos comentó
-          que esta decisión fue una solicitud en parte de los clientes y del mismo banco, debido al fenómeno mundial de aplicaciones
-          financieras. La aplicación tiene como objetivo a traer a usuarios más jóvenes y de esta forma fomentar el ahorro,
-          a su vez, que estos se mantengan activos en su uso porque identificaron que a pesar de las descargas su uso no
-          se mantenía en el tiempo.
-        </p>
-
-        <p>El diseño se realizó en base a los colores de la institución y se encuentra disponible solo para usuarios IOS, es
-          decir personas que tienen IPhone. Esta medida se tomó por la información que les entrego el equipo de marketing.
-          Para dar a conocer la aplicación a sus clientes crearon un landing page que difundieron por medio de campañas de
-          pago en redes sociales como Facebook y televisión. Facebook fue una de los lugares que llevo a más público a descargar
-          la app pero no tanto como pensaban.
-        </p>
-      </div>
-    </div>
-
-    <div clas="row">
-      <div class="col-md-12">
-
-        <p>
-          Para esta investigación entrevistamos a seis personas usuarias de algún banco en Chile y que en su celular tuviesen la app
-          de su banco. A través de un cuestionario, conocimos de qué forma interactúan con su banco día a día y cómo utilizan
-          la app. Además de sus formas y razones para ahorrar.
-        </p>
-      </div>
-    </div>
-    <div clas="row">
-      IMAGEN
-    </div>
-
-    <div clas="row">
-      <div class="col-md-12">
-        <p>- Cuatro de los seis entrevistados tienen sistema operativo Android.</p>
-        <p>- Solo uno un celular de prepago al que le compra bolsas para acceder a Internet.</p>
-        <p>- Para los entrevistados las app de su banco son confiables porque identifican características que les otorgan seguridad
-          como el
-          <b> pedir la huella digital para ingresar a la sesión, notificar por correo o sms los movimientos que se realizan dentro
-            de la app y contar con un sistema de cierre automático apenas se deje de usar o se encuentre inactiva la sesión.</b>
-        </p>
-        <p>- Para ahorrar dos de los usuarios lo hacen a través de fondos mutuos, los que pueden monitorear de manera constante
-          a través de la aplicación de su celular.</p>
-
-        <p>- Mas de uno de los entrevistados tenía dos cuentas en el mismo banco (vista y corriente) entre la que se traspasaba
-          fondos como forma de ahorro.</p>
-        <p>- Dos solo son clientes del banco porque fue el único que sin ningún requisito previo que ser mayor de 18 años les
-          permitió abrir una cuenta.</p>
-
-        <p>- Uno de los entrevistados prefiere el método tradicional de ahorro y el contacto directo con su ejecutiva.</p>
-        <p>Con estas entrevistas logramos identificar que los usuarios tienen la disposición a utilizar una 2 App “solo” cuando
-          esta tenga una buena valorización y beneficios para ellos. </p>
-
-      </div>
-    </div>
-
-  </div>
-
-  <div class="container-fluid" id="colorWhite">
-    <div class="row">
-      <div class="col-sm-12">
-
-        Finzalmente realizamos los test donde cada usuario tuvo que realizar una tarea y comentar su experiencia.
-
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-sm-2">
-        <div class="card" style="width: 10rem;">
-          <img class="card-img-top" src="assets/imgmisfinanzas/usuariaaa.png" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Test 1</h5>
-            <a href="https://www.useloom.com/share/fba7121a4f264b339e68ada969adeb0f" class="btn btn-primary">Ve el vídeo</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-sm-2">
-        <div class="card" style="width: 10rem;">
-          <img class="card-img-top" src="assets/imgmisfinanzas/usuariaaa.png" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Test 1</h5>
-            <a href="https://www.useloom.com/share/fba7121a4f264b339e68ada969adeb0f" class="btn btn-primary">Ve el vídeo</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-2">
-        <div class="card" style="width: 10rem;">
-          <img class="card-img-top" src="assets/imgmisfinanzas/usuario.png" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Test 2</h5>
-            <a href="https://www.useloom.com/share/b27542bd931643119070fb96eff27d8d" class="btn btn-primary">Ve el vídeo</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-sm-2">
-        <div class="card" style="width: 10rem;">
-          <img class="card-img-top" src="assets/imgmisfinanzas/usuario.png" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Test 3</h5>
-            <a href="https://www.useloom.com/share/c244118eb3a345a6b82dc56e83d77e75" class="btn btn-primary">Ve el vídeo</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-sm-2">
-        <div class="card" style="width: 10rem;">
-          <img class="card-img-top" src="assets/imgmisfinanzas/usuario.png" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Test 4</h5>
-            <a href="https://www.useloom.com/share/15582100fd4641858b885a6c08ec749c" class="btn btn-primary">Ve el vídeo</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-sm-2">
-        <div class="card" style="width: 10rem;">
-          <img class="card-img-top" src="assets/imgmisfinanzas/usuariaaa.png" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Test 5</h5>
-            <a href="https://www.useloom.com/share/f51e56b3b8824d1aaa4094ff528de8c9" class="btn btn-primary">Ve el vídeo</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 
   <div class="container-fluid testeAlto" id="colorGreen">
   </div>
@@ -363,72 +204,6 @@
   </div>
 
 
-
-  <div class="container-fluid testeAlto" id="colorGreen">
-    <div class="row">
-      <div class="col-sm-12">
-
-        Finzalmente realizamos los test donde cada usuario tuvo que realizar una tarea y comentar su experiencia.
-
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-sm-1">
-      </div>
-
-      <div class="col-sm-2">
-        <div class="card" style="width: 10rem;">
-          <img class="card-img-top" src="assets/imgmisfinanzas/usuariaaa.png" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Test 1</h5>
-            <a href="https://www.useloom.com/share/fba7121a4f264b339e68ada969adeb0f" class="btn btn-primary">Ve el vídeo</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-2">
-        <div class="card" style="width: 10rem;">
-          <img class="card-img-top" src="assets/imgmisfinanzas/usuario.png" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Test 2</h5>
-            <a href="https://www.useloom.com/share/b27542bd931643119070fb96eff27d8d" class="btn btn-primary">Ve el vídeo</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-sm-2">
-        <div class="card" style="width: 10rem;">
-          <img class="card-img-top" src="assets/imgmisfinanzas/usuario.png" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Test 3</h5>
-            <a href="https://www.useloom.com/share/c244118eb3a345a6b82dc56e83d77e75" class="btn btn-primary">Ve el vídeo</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-sm-2">
-        <div class="card" style="width: 10rem;">
-          <img class="card-img-top" src="assets/imgmisfinanzas/usuario.png" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Test 4</h5>
-            <a href="https://www.useloom.com/share/15582100fd4641858b885a6c08ec749c" class="btn btn-primary">Ve el vídeo</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-sm-2">
-        <div class="card" style="width: 10rem;">
-          <img class="card-img-top" src="assets/imgmisfinanzas/usuariaaa.png" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Test 5</h5>
-            <a href="https://www.useloom.com/share/f51e56b3b8824d1aaa4094ff528de8c9" class="btn btn-primary">Ve el vídeo</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-1">
-      </div>
-    </div>
-  </div>
 
   <footer id="contacto">
     <div class="row">

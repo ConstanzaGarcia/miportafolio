@@ -17,61 +17,72 @@
 </head>
 
 <body>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light" id="navbarup">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <a class="navbar-brand" href="index.html" onclick="aHome()">Constanza</a>
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+
+                <li class="nav-item active">
+                    <a class="nav-link" onclick="aMi()">Sobre mí</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" onclick="aProyectos()" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Proyectos
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="marketplace.html" onclick="marketPlace()">MarketPlace</a>
+                        <a class="dropdown-item" href="redsocial.html" onclick="redSocial()">Red Social</a>
+                        <a class="dropdown-item" href="registroif.html" onclick="registroPersonas()">Registro de personas</a>
+                        <a class="dropdown-item" href="misfinanzas.html" onclick="registroPersonas()">Mis Finanzas</a>
+
+                    </div>
+                </li>
+
+                <li class="nav-item active">
+                    <a class="nav-link" onclick="footer()">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
     <header>
-        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light" id="navbarup">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01"
-                aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                <a class="navbar-brand" href="index.html" onclick="aHome()">Constanza</a>
-                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-
-                    <li class="nav-item active">
-                        <a class="nav-link" onclick="aMi()">Sobre mí</a>
-                    </li>
-
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" onclick="aProyectos()" role="button" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false">
-                            Proyectos
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="marketplace.html" onclick="marketPlace()">MarketPlace</a>
-                            <a class="dropdown-item" href="redsocial.html" onclick="redSocial()">Red Social</a>
-                            <a class="dropdown-item" href="registroif.html" onclick="registroPersonas()">Registro de personas</a>
-                            <a class="dropdown-item" href="misfinanzas.html" onclick="registroPersonas()">Mis Finanzas</a>
-
-                        </div>
-                    </li>
-
-                    <li class="nav-item active">
-                        <a class="nav-link" onclick="footer()">Contacto</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+        <div class="container-fluid portada" id="home">
+            <section class="imagenPortada">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="animated fadeIn" id="coni">
+                            <b>
+                                CeliBook
+                            </b>
+                        </h1>
+                        <p class="animated fadeIn" id="ux">Red social para personas celicas e intolerantes al gluten.</p>
+                    </div>
+                </div>
+                <div class="row logo">
+                    <img class="img-fluid logoMF" src="assets/imgredsocial/celiaco3verde.png" alt="">
+                </div>
+            </section>
+        </div>
     </header>
 
-    <div class="container-fluid portada" id="home">
-        <section class="imagenPortada">
-            <div class="row">
-                <div class="col-md-12">
-                    <h1 class="animated fadeIn" id="coni">
-                        <b>
-                            CeliBook
-                        </b>
-                    </h1>
-                    <p class="animated fadeIn" id="ux">Red social para personas celicas e intolerantes al gluten.</p>
-                </div>
-            </div>
-            <div class="row logo">
-                <img class="img-fluid logoMF" src="assets/imgredsocial/celiaco3verde.png" alt="">
-            </div>
-        </section>
-    </div>
-
     <div class="container-fluid cBlanco">
+
+        <div class="row">
+
+            <div class="col-md-12">
+                Las redes sociales están presentes en la vida de todas las personas: vivimos conectados hablando por WhatsApp, compartiendo
+                publicaciones en Facebook, fotos en Instagram e informándonos al instante en Twitter. Todas estas redes nos
+                permiten crear comunidad y comenzar a agruparnos de acuerdo con nuestros interés y actividades Para este
+                desafío escogimos el tema de alimentación y debido a la contingencia, nos enfocamos en un grupo en específico
+                que son las personas celiacas e intolerantes al gluten.
+
+            </div>
+        </div>
         <div class="row">
             <div class="col-md-12 textouno">
                 <h2>Objetivo</h2>
@@ -80,15 +91,13 @@
 
         <div class="row">
             <div class="col-md-12 textouno">
-                <p>Crear una red social para un grupo de personas</p>
+                <p>Crear una red social enfocada en informar, educar y crear comunidad a las personas celiacas o intolerantes
+                    al gluten. </p>
             </div>
         </div>
 
         <div class="row">
             <div class="col-12 col-lg-6">
-
-                <p>
-                    <b> Solución</b>: CeliBook </p>
                 <p>
                     <b> Duración</b>: 2 semanas </p>
             </div>
@@ -132,9 +141,69 @@
     <div class="container-fluid cBlanco">
         <div class="row">
             <div class="col-md-12 textouno">
-                <h2>Objetivo</h2>
+                <h2>Investigación</h2>
             </div>
         </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                Se estima que en Chile el 1% de la población padece de intolerancia al gluten, que es la proteína presente en el trigo, centeno
+                y cebada. Es decir, más de 97 mil chilenos, según Fundación Convivir. Esta condición se da con más frecuencia
+                en mujeres que en hombres, no habiendo edades más vulnerables que otras. Según el doctor Dr. Juan Francisco
+                Miquel, gastroenterólogo de la Pontificia Universidad Católica en entrevista para el diario La Tercera en
+                enero del 2016. Los alimentos para celiacos son tres veces más caros (según el INTA), ejemplo de ello es
+                que un paquete de fideos regular tiene un costo de 630 pesos, mientras que, sin gluten, su valor asciende
+                a 1.940 pesos. En tanto, para el pan de molde el precio regular es de 1.000 pesos, mientras que el que no
+                tiene gluten sube a 3.049 pesos.
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid cVerde">
+        <div class="row">
+            <div class="col-md-12 textouno">
+                <h2>Las entrevistas</h2>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12 textouno">
+                Los entrevistados en su mayoría mujeres nos permitieron conocer todas las problemáticas que enfrentan a diario por ser celiacos,
+                desde donde comprar un producto o demorarse 1 hora en promedio en el supermercado buscando productos certificados.
+                En base a sus necesidades, conversamos con las personas para saber a través de que redes sociales se comunican,
+                como utilizan el grupo de Facebook para personas celiacas, como compran, que contenido comparte, incluso
+                si tienen en su celular alguna app similar. Conociendo a nuestros usuarios identificamos tres tipos de user
+                persona, porque a veces no eres celiaco, pero tienes un hijo, pareja, amigo que sí lo es o te encuentras
+                en un proceso
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid cBlanco">
+        <div class="row">
+            <div class="col-md-12 textouno">
+                <h2>Prototipod e alta </h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 textouno">
+
+                Hicimos el prototipo de alta fidelidad en el que utilizamos el color verde porque es un color relajante y refrescante que
+                induce a quién lo contempla sensaciones de serenidad y armonía. Está íntimamente relacionado con todo lo
+                natural, simbolizando también la vida, la fertilidad y la buena salud. Además del morado, que sirve como
+                representación de las acciones por venir, del futuro, aquello que va más allá de lo tangible, de la imaginación
+                y los sueños. Es por ello por lo que es un color que evoca a la espiritualidad, a la calma, a la tranquilidad,
+                al equilibrio de las emociones y que por lo mismo promueve la expansión de la mente, lo intelectual y el
+                sentido común.
+
+
+            </div>
+        </div>
+
+
+
+
     </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
