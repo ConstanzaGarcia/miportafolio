@@ -1,9 +1,52 @@
-.bg-light {
-    background-color: #6BBFAB!important;
-    color: #ffff;
+.navbar-brand span {
+    color: #fed136;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
 }
 
-header{
+.navbar-brand {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+}
+
+.navbar-nav .nav-item .nav-link {
+    padding: 1.1em 1em!important;
+    font-size: 120%;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #fed136;
+}
+
+.navbar-expand-md .navbar-nav .dropdown-menu {
+    border-top: 3px solid #fed136;
+}
+
+.dropdown-item:hover {
+    background-color: #fed136;
+    color: #fff;
+}
+
+nav {
+    -webkit-transition: padding-top .3s, padding-bottom .3s;
+    -moz-transition: padding-top .3s, padding-bottom .3s;
+    transition: padding-top .3s, padding-bottom .3s;
+    border: none;
+}
+
+.shrink {
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: #cc2970;
+}
+
+header {
     color: black;
     width: 100%;
     padding: 10%;
@@ -76,6 +119,6 @@ a:active {
 
 .btn-primary {
     color: #fff;
-    background-color:#6BBFAB;
+    background-color: #6BBFAB;
     border-color: #007bff;
 }

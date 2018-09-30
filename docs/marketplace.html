@@ -18,44 +18,45 @@
 </head>
 
 <body>
-    <header>
-        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light" id="navbarup">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01"
-                aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top" id="banner">
+        <div class="container">
+            <!-- Brand -->
+            <a class="navbar-brand" href="#">
+                <span>Constanza</span> García</a>
+
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                <a class="navbar-brand" href="index.html" onclick="aHome()">Constanza</a>
-                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
 
-                    <li class="nav-item active">
-                        <a class="nav-link" onclick="aMi()">Sobre mí</a>
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutme.html" onclick="redSocial()">About</a>
                     </li>
-
+                    <!-- <li class="nav-item">
+                                <a class="nav-link" href="#">Link</a>
+                            </li>  -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contacto</a>
+                    </li>
+                    <!-- Dropdown -->
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" onclick="aProyectos()" role="button" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" onclick="aProyectos()" id="navbardrop" data-toggle="dropdown">
                             Proyectos
                         </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="marketplace.html" onclick="marketPlace()">MarketPlace</a>
+                        <div class="dropdown-menu">
                             <a class="dropdown-item" href="redsocial.html" onclick="redSocial()">Red Social</a>
+                            <a class="dropdown-item" href="marketplace.html" onclick="marketPlace()">Market Place</a>
+                            <a class="dropdown-item" href="misfinanzas.html" onclick="registroPersonas()">Fitch APP</a>
                             <a class="dropdown-item" href="registroif.html" onclick="registroPersonas()">Registro de personas</a>
-                            <a class="dropdown-item" href="misfinanzas.html" onclick="registroPersonas()">Mis Finanzas</a>
-
                         </div>
-                    </li>
-
-                    <li class="nav-item active">
-                        <a class="nav-link" onclick="footer()">Contacto</a>
                     </li>
                 </ul>
             </div>
-        </nav>
-    </header>
-
-
-
+        </div>
+    </nav>
 
     <header class="container-fluid">
         <div class="container">
@@ -74,23 +75,25 @@
 
     <section class="container-fluid sectionWhite">
         <div class="container">
-            <div class="row">
-                <div class="col-12 ">
-                    <h3>Objetivo</h3>
-                </div>
-            </div>
             <div class="row pJustify">
                 <div class="col-12 col-lg-6">
-                    <p>Asesorar a uno de los miembros de la Asociación Nacional de Pequeños Comerciantes en la creación de un
-                        portal desde donde los consumidores adquieran sus productos sin intermediarios.</p>
+                    <p>¿De qué forma posicionas un emprendimiento si solo estas vendiendo por Instagram? Ese es el desafío del
+                        proyecto Market Place: Asesorar a uno de los miembros de la Asociación Nacional de Pequeños Comerciantes
+                        en la creación de un portal desde donde los consumidores adquieran sus productos sin intermediarios.
+                        Mala madre store es el emprendimiento de Marlenne Peña, quien confecciona monederos, estuches, fundas
+                        para laptop, tablet, morrales, totebag, además de cojines decorativos con formas de animales. Todos
+                        utilizan la técnica de la sublimación y son elaborados 100% por las manos de su dueña. .
+                    </p>
                 </div>
             </div>
             <div class="row pJustify">
                 <div class="col-12 col-lg-6">
 
                     <p>
-                        <b> Solución</b>: Crear una plataforma ecommerce para unificar los canales de comunicación y ventas de
-                        Mala Madre Store.</p>
+                        <b> Solución</b>: unificar las plataformas de comunicación entre las personas que desean adquirir los
+                        productos y la misma dueña de la marca. Por ello, vamos a crear un sitio web para concretar las ventas
+                        a través de un sistema de compra online con carro de compras el que además tendrá en su interfaz
+                        un catálogo de todos los productos que MalaMadre realiza..</p>
                     <p>
                         <b> Duración</b>: 3 semanas.</p>
                 </div>
@@ -137,25 +140,19 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 ">
-                    <h3>Introducción</h3>
+                    <h3></h3>
                 </div>
             </div>
             <div class="row pJustify">
                 <div class="col-12 col-lg-6">
                     <p>
-                        En Chile existen alrededor de
-                        <b>1.992.578 microemprendedores,</b> formales o informales, de acuerdo a la V Encuesta de Microemprendimiento
-                        (EME) 2017, realizada por el Ministerio de Economía y el
-                        <a href="http://www.ine.cl/estadisticas/laborales/eme">Instituto Nacional de Estadísticas (INE)</a>.
-                    </p>
-                    <p>
-                        Solo
-                        <b>el 39,2% es liderado por mujeres</b>, este es el caso de
-                        <b>
-                            <a href="https://www.instagram.com/malamadrestore/">Mala Madre Store.</a>
-                        </b> El emprendimiento de Marlenne Peña, quien confecciona monederos, estuches, fundas para laptop, tablet,
-                        morrales, totebag, además de cojines decorativos con formas de animales. Todos utilizan la técnica
-                        de la sublimación y son elaborados 100% por las manos de su dueña.
+                        Conocer el funcionamiento de la asociación era una pieza elemental para saber de qué forma debíamos asesorar a este emprendedora
+                        pero más aún lo era conocer a Marlenne y las razones que la motivaron a abrir este emprendimiento
+                        por Instagram. ¿Por qué Instagram y no otra red social? ¿Por qué solo ese medio? ¿Quiénes son sus
+                        consumidores? ¿Por qué prefieren comprar a través de una red social? Estas interrogantes nos ayudaron
+                        a resolver el user persona. Identificar a sus usuarias nos sirvió para saber en qué nuevos canales
+                        podríamos insertar este emprendimiento.
+
                     </p>
                 </div>
 
@@ -605,12 +602,12 @@
             <div class="row colJustify">
                 <div class="col-12 col-lg-6">
                     <p>
-                        Luego de testear el prototipo de baja fidelidad, iteramos de acuerdo al feedback que recibimos de nuestros usuarios y creamos
-                        el prototipo de alta que también testeamos con un nuevo publico.
+                        Los testing al prototipo de baja fidelidad nos dieron el feedback para comenzar a realizar el prototipo de alta. Logramos
+                        identificar los problemas que tenían los usuarios para seleccionar un producto del catálogo, llegar
+                        a él les costaba o no sabían dónde hacer clic. Con esto, realizamos el prototipo de alta fidelidad
+                        que también fue testead
                     </p>
-                    <p>
-                        A continuación la demostración del prototipo de alta fidelidad.
-                    </p>
+
 
                 </div>
                 <div class="col-12 col-lg-6 v-container">
@@ -621,57 +618,6 @@
 
         </div>
     </section>
-    <section class="container-fluid">
-        <div class="row pJustify">
-            <div class="col-12 col-lg-12 tittleUser">
-                <h3>
-                    Testing con Prototipo de Alta Fidelidad
-                </h3>
-            </div>
-        </div>
-        <div class="row bJustify">
-            <div class="col v-container">
-                <iframe src="https://www.youtube.com/embed/KJjNfOepMVw?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12">
-                <h3>
-                    Demostración
-                </h3>
-            </div>
-        </div>
-        <div class="row pJustify">
-            <div class="col-lg-6 col-12">
-                <p> Revisa a continuación la demostración de nuestro prototipo y el proceso de investigación.</p>
-
-            </div>
-            <div class=" col-12 col-lg-12 v-container">
-                <iframe src="https://www.useloom.com/embed/005acfceb8a2491dbc74d9602ff62df2" frameborder="0" webkitallowfullscreen mozallowfullscreen
-                    allowfullscreen></iframe>
-            </div>
-        </div>
-    </section>
-    <section class="container-fluid sectionColor2">
-
-        <div class="row">
-            <div class="col">
-                <h3 class="pWhite">
-                    Medium
-                </h3>
-            </div>
-        </div>
-        <div class="row pJustify">
-            <div class="col-lg-6 col-12">
-                <p class="pWhite">Si deseas conocer más sobre nuestro aprendizaje te invitamos a leer nuestro post en Medium</p>
-                <a target='_blank' href="https://medium.com/@o.conii.o/5-cosas-que-no-debes-hacer-si-quieres-ser-ux-6d0f7945968d">
-                    <button type="button" class="btn btn-primary " data-toggle="collapse">Ir a Medium</button>
-                </a>
-            </div>
-        </div>
-
-    </section>
-
     <section class="container-fluid sectionWhite">
 
         <footer id="contacto">
