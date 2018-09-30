@@ -82,3 +82,13 @@ nav {
     text-align: center;
     background-color: #99CE81;
 }
+
+h1 {
+    text-align: center;
+    font-family: "Amatic+SC";
+    padding-bottom: 0px;
+    margin-bottom: 30px;
+    margin-top: 80px;
+    font-weight: bold;
+    text-shadow: #fff 0.1em 0.1em 0.4em;
+}
