@@ -21,7 +21,7 @@
     <nav class="navbar navbar-expand-md navbar-dark fixed-top" id="banner">
         <div class="container">
             <!-- Brand -->
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="index.html" onclick="ahome()">
                 <span>Constanza</span> García</a>
 
             <!-- Toggler/collapsibe Button -->
@@ -33,17 +33,14 @@
             <div class="collapse navbar-collapse" id="collapsibleNavbar">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="aboutme.html" onclick="redSocial()">About</a>
+                        <a class="nav-link" href="#">Sobre mi</a>
                     </li>
-                    <!-- <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                </li>  -->
                     <li class="nav-item">
                         <a class="nav-link" href="#">Contacto</a>
                     </li>
                     <!-- Dropdown -->
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" onclick="aProyectos()" id="navbardrop" data-toggle="dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" onclick="aProyectos()" data-toggle="dropdown">
                             Proyectos
                         </a>
                         <div class="dropdown-menu">
@@ -57,87 +54,62 @@
         </div>
     </nav>
 
-    <header>
-
-        <section class="imagenPortada">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h1 class="animated fadeIn">
-                            <b>
-                                About me
-                            </b>
-                        </h1>
-                        <p class="animated fadeIn" id="ux">Te invito a conocerme</p>
-                    </div>
-                </div>
-                <!-- 
-                <div class="row logo">
-                    <img class="img-fluid logoMF" src="assets/img/WhatsApp Image 2018-09-07 at 14.09.11 (1).jpeg" alt="">
-                </div>
-                 -->
-            </div>
-        </section>
-    </header>
-
-    <section>
-        <div class="container-fluid">
-            <div class="col-md-12">
-                <h2>
-                    Sobre mí
-                </h2>
-                <p>Especialista en user reserch, con alta capacidad para observar, investigar y entender los comportamientos
-                    de los usuarios. En mi experiencia he aprendido a utilizar herramientas de marketing, metodología ágil
-                    y gestión de procesos. Además, me he desempeñado como periodista y community manager. </p>
-            </div>
-        </div>
-    </section>
-
-
-     <!--  
-
-    <section id="proyectos">
+    <div class="banner">
         <div class="container">
-            <figure class="snip1561">
-                <img src="assets/img/malamadresstore.png" alt="sample74" />
-                <a href="marketplace.html"> </a>
-            </figure>
-            <figure class="snip1561 hover">
-                <img src="assets/img/fitch.png" alt="sample86" />
-                <a href="misfinanzas.html"></a>
-            </figure>
-            <figure class="snip1561">
-                <img src="assets/img/celibook3.png" alt="sample100" />
-                <a href="redsocial.html"></a>
-            </figure>
+            <div class="banner-text">
+                <div class="banner-heading">
+                    Constanza García
+                </div>
+                <div class="banner-sub-heading">
+                    UX Design & Periodista </div>
+                <!--  <button type="button" class="btn btn-warning text-dark btn-banner">Conoce mi trabajo</button> -->
+            </div>
+        </div>
+    </div>
+    <section id="about">
+        <div class="container">
+            <div class="text-intro">
+                <h2>Sobre mí</h2>
+                <p>Especialista en User Reserch, con alta capacidad para observar, investigar y entender los comportamientos
+                    de los usuarios. En mi experiencia he aprendido a utilizar herramientas de marketing, metodología ágil
+                    y gestión de procesos. Además, me he desempeñado como periodista y community manager.</p>
+                <p>Mis habilidades como periodista se complementan con las de UX </p>
 
+            </div>
         </div>
     </section>
-    -->
+
+    <section id="habilidades">
+
+    </section>
+
+
 
 
     <footer id="contacto">
         <div class="row">
+            <div class="col-md-12">
+                <div class="mb-5 flex-center">
+                    <a class="link" href="https://www.linkedin.com/in/constanza-garcia-madrid/">
+                        <i class="fab fa-linkedin mr-md-5 mr-3 fa-2x"></i>
+                    </a>
 
-            <div class="col-4">
-                <a href="https://www.linkedin.com/in/constanza-garcia-madrid/">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-            </div>
-            <div class="col-4">
-                <a href="o.conii.o@gmail.com">
-                    <i class="fas fa-envelope-square"></i>
-                </a>
-            </div>
-            <div class="col-4">
-                <a href="https://www.twitter.com/abretubocaa">
-                    <i class="fab fa-twitter-square"></i>
-                </a>
+                    <a class="link" href="o.conii.o@gmail.com">
+                        <i class="fas fa-envelope-square mr-md-5 mr-3 fa-2x"></i>
+                    </a>
+
+                    <a class="link" href="https://www.twitter.com/abretubocaa">
+                        <i class="fab fa-twitter-square mr-md-5 mr-3 fa-2x"></i>
+                    </a>
+
+                    <a class="link" href="https://medium.com/@ConstanzaGarcia">
+                        <i class="fab fa-medium mr-md-5 mr-3 fa-2x"></i>
+                    </a>
+                </div>
             </div>
         </div>
-
     </footer>
-    
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
