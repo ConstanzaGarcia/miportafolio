@@ -1,24 +1,29 @@
 .banner {
-  background-image: url(../../assets/imgmisfinanzas/FINANZAS-PERSONALES.jpg);
+  background-image: url(../../assets/imgmisfinanzas/moneydos.jpg);
 }
 
 .sectionWhite {
   background-color: #fff;
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-
-.pJustify {
-  display: flex;
-  justify-content: center;
+  margin: auto;
+  width: 50%;
+  padding: 10px;
 }
 
 .sectionColorYellow {
-  background-color: #fed136;
+  border: 3px solid #fed136;
   padding-top: 50px;
   padding-bottom: 50px;
   text-align: center;
-  width: 100%;
+  width: 70%;
+  padding: 10px;
+  margin: auto;
+}
+
+.sectionInvestigacion {
+  text-align: center;
+  width: 70%;
+  padding: 50px;
+  margin: auto;
 }
 
 #investigacion {
@@ -31,5 +36,8 @@
 }
 
 .prototipo {
-  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
 }

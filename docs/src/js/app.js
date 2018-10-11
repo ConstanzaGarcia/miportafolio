@@ -7,6 +7,7 @@ $(document).on("scroll", function () {
     $("#banner").removeClass("shrink");
   }
 });
+
 /*Para llamar a cada sección del portafolio*/
 function aHome() {
   location.href = "#home";
