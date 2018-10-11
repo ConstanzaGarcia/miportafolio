@@ -1,31 +1,31 @@
 .banner {
-    background-image: url(../../assets/imgmisfinanzas/FINANZAS-PERSONALES.jpg);
-}
-
-h1 {
-    text-align: center;
-    padding-bottom: 0px;
-    margin-bottom: 30px;
-    margin-top: 80px;
-    font-weight: bold;
-    text-shadow: #fff 0.1em 0.1em 0.4em;
+  background-image: url(../../assets/imgmisfinanzas/FINANZAS-PERSONALES.jpg);
 }
 
 .sectionWhite {
-    background-color: #fff;
-    padding-top: 100px;
-    padding-bottom: 100px;
+  background-color: #fff;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .pJustify {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .sectionColorYellow {
-    background-color: #fed136;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    text-align: center;
-    width: 100%;
+  background-color: #fed136;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+  width: 100%;
+}
+
+#investigacion {
+  justify-content: flex-start;
+  text-align: left;
+}
+
+#entrevistas {
+  text-align: center;
 }
