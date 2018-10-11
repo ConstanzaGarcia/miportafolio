@@ -19,41 +19,71 @@
 </head>
 
 <body>
-    <header>
-        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light" id="navbarup">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01"
-                aria-expanded="false" aria-label="Toggle navigation">
+
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top" id="banner">
+        <div class="container">
+            <!-- Brand -->
+            <a class="navbar-brand" href="index.html" onclick="ahome()">
+                <span>Constanza</span> García</a>
+
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                <a class="navbar-brand" href="index.html" onclick="aHome()">Constanza</a>
-                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
 
-                    <li class="nav-item active">
-                        <a class="nav-link" onclick="aMi()">Sobre mí</a>
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sobre mi</a>
                     </li>
-
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contacto</a>
+                    </li>
+                    <!-- Dropdown -->
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" onclick="aProyectos()" role="button" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" onclick="aProyectos()" data-toggle="dropdown">
                             Proyectos
                         </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="marketplace.html" onclick="marketPlace()">MarketPlace</a>
+                        <div class="dropdown-menu">
                             <a class="dropdown-item" href="redsocial.html" onclick="redSocial()">Red Social</a>
-                            <a class="dropdown-item" href="registroif.html" onclick="registroPersonas()">Registro de personas</a>
-                            <a class="dropdown-item" href="misfinanzas.html" onclick="registroPersonas()">Mis Finanzas</a>
-
+                            <a class="dropdown-item" href="marketplace.html" onclick="marketPlace()">Market Place</a>
+                            <a class="dropdown-item" href="misfinanzas.html" onclick="registroPersonas()">Fitch APP</a>
                         </div>
-                    </li>
-
-                    <li class="nav-item active">
-                        <a class="nav-link" onclick="footer()">Contacto</a>
                     </li>
                 </ul>
             </div>
-        </nav>
+        </div>
+    </nav>
+
+    <div class="banner">
+        <div class="container">
+            <div class="banner-text">
+                <div class="banner-heading">
+                    Registro IF </div>
+                <div class="banner-sub-heading">
+                    Una app para el ingreso de visitantes a IF BLANCO </div>
+                <!--  <button type="button" class="btn btn-warning text-dark btn-banner">Conoce mi trabajo</button> -->
+            </div>
+        </div>
+    </div>
+
+    <header class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-12">
+                    <h1>
+                        Plataforma de Ventas en Línea
+                    </h1>
+                </div>
+            </div>
+            <div class="row logo">
+                <img class="logoMM" src="assets/imgmarketplace/LogoMMS2.png" alt="">
+            </div>
+        </div>
     </header>
+
+
 
 
 
@@ -98,6 +128,31 @@
         </div>
 
 
+
+
+        <footer id="contacto">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="mb-5 flex-center">
+                        <a class="link" href="https://www.linkedin.com/in/constanza-garcia-madrid/">
+                            <i class="fab fa-linkedin mr-md-5 mr-3 fa-2x"></i>
+                        </a>
+
+                        <a class="link" href="o.conii.o@gmail.com">
+                            <i class="fas fa-envelope-square mr-md-5 mr-3 fa-2x"></i>
+                        </a>
+
+                        <a class="link" href="https://www.twitter.com/abretubocaa">
+                            <i class="fab fa-twitter-square mr-md-5 mr-3 fa-2x"></i>
+                        </a>
+
+                        <a class="link" href="https://medium.com/@ConstanzaGarcia">
+                            <i class="fab fa-medium mr-md-5 mr-3 fa-2x"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
 
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
             crossorigin="anonymous"></script>

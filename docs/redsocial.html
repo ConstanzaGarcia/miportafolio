@@ -20,7 +20,7 @@
     <nav class="navbar navbar-expand-md navbar-dark fixed-top" id="banner">
         <div class="container">
             <!-- Brand -->
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="index.html" onclick="ahome()">
                 <span>Constanza</span> García</a>
 
             <!-- Toggler/collapsibe Button -->
@@ -32,48 +32,49 @@
             <div class="collapse navbar-collapse" id="collapsibleNavbar">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="aboutme.html" onclick="redSocial()">About</a>
+                        <a class="nav-link" href="#">Sobre mi</a>
                     </li>
-                    <!-- <li class="nav-item">
-                                <a class="nav-link" href="#">Link</a>
-                            </li>  -->
                     <li class="nav-item">
                         <a class="nav-link" href="#">Contacto</a>
                     </li>
                     <!-- Dropdown -->
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" onclick="aProyectos()" id="navbardrop" data-toggle="dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" onclick="aProyectos()" data-toggle="dropdown">
                             Proyectos
                         </a>
                         <div class="dropdown-menu">
                             <a class="dropdown-item" href="redsocial.html" onclick="redSocial()">Red Social</a>
                             <a class="dropdown-item" href="marketplace.html" onclick="marketPlace()">Market Place</a>
                             <a class="dropdown-item" href="misfinanzas.html" onclick="registroPersonas()">Fitch APP</a>
-                            <a class="dropdown-item" href="registroif.html" onclick="registroPersonas()">Registro de personas</a>
                         </div>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-    <header>
-        <div class="banner">
-            <div class="container-fluid portada" id="home">
-                <section class="imagenPortada">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h1 class="animated fadeIn" id="coni">
-                                <b>
-                                    CeliBook
-                                </b>
-                            </h1>
-                            <p class="animated fadeIn" id="ux">Red social para personas celicas e intolerantes al gluten.</p>
-                        </div>
-                    </div>
-                    <div class="row logo">
-                        <img class="img-fluid logoMF" src="assets/imgredsocial/celiaco3verde.png" alt="">
-                    </div>
-                </section>
+
+    <div class="banner">
+        <div class="container">
+            <div class="banner-text">
+                <div class="banner-heading">
+                    Celibook
+                </div>
+                <div class="banner-sub-heading">
+                    Una red social para personas celíacas </div>
+                <!--  <button type="button" class="btn btn-warning text-dark btn-banner">Conoce mi trabajo</button> -->
+            </div>
+        </div>
+    </div>
+    <header class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-12">
+                    <h1>
+                        Red Social: Celibook </h1>
+                </div>
+            </div>
+            <div class="row logo">
+                <img class="logoRS" src="assets/imgredsocial/celiaco3verde.png" alt="">
             </div>
         </div>
     </header>
@@ -215,6 +216,32 @@
 
 
     </div>
+
+
+
+    <footer id="contacto">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="mb-5 flex-center">
+                    <a class="link" href="https://www.linkedin.com/in/constanza-garcia-madrid/">
+                        <i class="fab fa-linkedin mr-md-5 mr-3 fa-2x"></i>
+                    </a>
+
+                    <a class="link" href="o.conii.o@gmail.com">
+                        <i class="fas fa-envelope-square mr-md-5 mr-3 fa-2x"></i>
+                    </a>
+
+                    <a class="link" href="https://www.twitter.com/abretubocaa">
+                        <i class="fab fa-twitter-square mr-md-5 mr-3 fa-2x"></i>
+                    </a>
+
+                    <a class="link" href="https://medium.com/@ConstanzaGarcia">
+                        <i class="fab fa-medium mr-md-5 mr-3 fa-2x"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>

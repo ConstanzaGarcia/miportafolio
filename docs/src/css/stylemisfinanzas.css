@@ -1,13 +1,31 @@
+@import url('https://fonts.googleapis.com/css?family=Gothic+A1|Kaushan+Script|Libre+Baskerville|Lobster');
+.body {
+    font-family: 'Gothic A1', sans-serif;
+    font-size: 16px;
+}
+
+p {
+    color: #212529;
+    font-size: 1em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #323233;
+    text-transform: uppercase;
+}
+
 .navbar-brand span {
     color: #fed136;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 700;
     letter-spacing: 0.1em;
+    font-family: 'Kaushan Script', 'Helvetica Neue', Helvetica, Arial, cursive;
 }
 
 .navbar-brand {
     color: #fff;
-    font-size: 20px;
+    font-size: 25px;
+    font-family: 'Kaushan Script', 'Helvetica Neue', Helvetica, Arial, cursive;
     font-weight: 700;
     letter-spacing: 0.1em;
 }
@@ -17,7 +35,8 @@
     font-size: 120%;
     font-weight: 500;
     letter-spacing: 1px;
-    color: #fff;
+    color: #212529;
+    font-family: 'Gothic A1', sans-serif;
 }
 
 .navbar-nav .nav-item .nav-link:hover {
@@ -43,62 +62,12 @@ nav {
 .shrink {
     padding-top: 0;
     padding-bottom: 0;
-    background-color: #cc2970;
-}
-
-header {
-    color: white;
-    width: 100%;
-    padding: 10%;
-    background-image: url(../../assets/img/FINANZAS-PERSONALES-oscura.png);
-    text-align: center;
-    opacity: 0.7%;
-}
-
-h1 {
-    text-align: center;
-    font-family: "Amatic+SC";
-    padding-bottom: 0px;
-    margin-bottom: 30px;
-    margin-top: 80px;
-    font-weight: bold;
-    /* text-shadow: #ffffff 0.1em 0.1em 0.4em;*/
-}
-
-.logo {
-    display: flex;
-    justify-content: center;
-    height: 90px;
-}
-
-.logoMF {
-    height: 171px;
-    margin-bottom: 100px;
-}
-
-.v-container {
-    position: relative;
-    padding-bottom: 56.25%;
-    /* proporción 16:9 */
-    padding-top: 25px;
-    height: 0;
-}
-
-.v-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
-@font-face {
-    font-family: "shellahera";
-    src: url(font/ShellaheraScriptDemo.ttf) format("truetype");
+    background-color: #212529;
 }
 
 .banner {
-    text-align: left;
+    background-image: url(../../assets/imgmisfinanzas/FINANZAS-PERSONALES.jpg);
+    text-align: center;
     color: #fff;
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -107,23 +76,111 @@ h1 {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    background-image: url(../../assets/img/FINANZAS-PERSONALES-oscura.png);
 }
 
-.logo {
+.banner-text {
+    padding: 200px 0 150px 0;
+}
+
+.banner-heading {
+    font-family: 'Lobster', cursive;
+    font-size: 75px;
+    font-weight: 700;
+    line-height: 100px;
+    margin-bottom: 30px;
+    color: #212529;
+}
+
+.banner-sub-heading {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 30px;
+    margin-bottom: 50px;
+    color: #212529;
+}
+
+.btn-banner {
+    padding: 5px 20px;
+    border-radius: 10px;
+    font-weight: 700;
+    line-height: 1.5;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.text-intro {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    padding-top: 30px;
+}
+
+/* mobile view */
+
+@media (max-width:500px) {
+    .navbar-nav {
+        background-color: #000;
+        border-top: 3px solid #fed136;
+        color: #fff;
+        z-index: 1;
+        margin-top: 5px;
+    }
+    .navbar-nav .nav-item .nav-link {
+        padding: 0.7em 1em!important;
+        font-size: 100%;
+        font-weight: 500;
+    }
+    .banner-text {
+        padding: 150px 0 150px 0;
+    }
+    .banner-heading {
+        font-size: 30px;
+        line-height: 30px;
+        margin-bottom: 20px;
+    }
+    .banner-sub-heading {
+        font-size: 10px;
+        font-weight: 200;
+        line-height: 10px;
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width:768px) {
+    .banner-text {
+        padding: 150px 0 150px 0;
+    }
+    .banner-sub-heading {
+        font-size: 23px;
+        font-weight: 200;
+        line-height: 23px;
+        margin-bottom: 40px;
+    }
+}
+
+/* header {
+    background-image: url(../../assets/imgmisfinanzas/FINANZAS-PERSONALES.jpg);
+    background-position: center;
+    background-color: #fff;
+    color: #FBFFF9;
+} */
+
+/* .logo {
     display: flex;
     justify-content: center;
     height: 90px;
 }
-    
-.logoMM {
+
+.logoRS {
     height: 171px;
     margin-bottom: 100px;
 }
+*/ 
 
 h1 {
     text-align: center;
-    font-family: "Lato";
     padding-bottom: 0px;
     margin-bottom: 30px;
     margin-top: 80px;
@@ -137,16 +194,9 @@ h1 {
     padding-bottom: 100px;
 }
 
-.sectionColor {
-    background-color: #fff;
-    padding-top: 100px;
-    padding-bottom: 100px;
-}
-
-.sectionColor2 {
-    background-color: #fff;
-    padding-top: 100px;
-    padding-bottom: 100px;
+.pJustify {
+    display: flex;
+    justify-content: center;
 }
 
 .sectionColorYellow {
@@ -157,95 +207,17 @@ h1 {
     width: 100%;
 }
 
-h3 {
+/*Pie de pagina con rrss*/
+
+footer {
     text-align: center;
-    color: #191716;
-    font-size: xx-large;
-    margin-bottom: 20px;
+    padding: 1rem;
 }
 
-h4 {
-    text-align: center;
-    color: #191716;
-    margin-bottom: 20px;
+.link {
+    color: #212529;
 }
 
-h5 {
-    margin-bottom: 27px;
-    margin-top: 20px;
-}
-
-.sintesisTittle {
-    color: black;
-}
-
-.pWhite {
-    color: #fff;
-}
-
-.perfilCliente {
-    justify-content: center;
-    display: flex;
-}
-
-.pPerfil {
-    margin-top: 20px;
-}
-
-.pJustify {
-    display: flex;
-    justify-content: center;
-}
-
-.collapse {
-    display: contents;
-}
-
-.btn-primary {
-    color: #fff;
-    background-color: #672841;
-    border-color: #672841;
-}
-
-.btn-primary:hover {
-    color: #fff;
-    background-color: #672841;
-    border-color: #672841;
-}
-
-.btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .show>.btn-primary.dropdown-toggle:focus {
-    box-shadow: 0 0 0 0.2rem rgba(255, 0, 156, 0.5);
-}
-
-.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
-    color: #fff;
-    background-color: #8f2a52;
-    border-color: #8f2a52;
-}
-
-.bJustify {
-    text-align: center;
-    margin-bottom: 50px;
-}
-
-.imgS {
-    margin-bottom: 50px;
-}
-
-.tittleUser {
-    margin-top: 50px;
-    margin-bottom: 16px;
-}
-
-a {
-    color: #ac8ba7;
-}
-
-.imgJustify {
-    display: flex;
-    justify-content: center;
-}
-
-.colJustify {
-    align-items: center;
+.link:hover {
+    color: #fed136;
 }

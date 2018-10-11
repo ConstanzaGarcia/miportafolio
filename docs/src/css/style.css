@@ -5,7 +5,7 @@
 }
 
 p {
-  color:#212529;
+  color: #212529;
   font-size: 1em;
 }
 
@@ -35,7 +35,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 120%;
   font-weight: 500;
   letter-spacing: 1px;
-  color:#212529;
+  color: #ffc82c;
   font-family: 'Gothic A1', sans-serif;
 }
 
@@ -88,7 +88,7 @@ nav {
   font-weight: 700;
   line-height: 100px;
   margin-bottom: 30px;
-  color:#212529;
+  color: #212529;
 }
 
 .banner-sub-heading {
@@ -97,7 +97,7 @@ nav {
   font-weight: 300;
   line-height: 30px;
   margin-bottom: 50px;
-  color:#212529;
+  color: #212529;
 }
 
 .btn-banner {
@@ -162,19 +162,14 @@ nav {
 
 /*proyectos*/
 
-.proyectos {
-  text-align: center;
-  padding: 1rem;
-}
-
 .btn-primary {
-  color:#212529;
+  color: #212529;
   background-color: #fed136!important;
   border-color: #fed136!important;
 }
 
 .btn-primary:hover {
-  color:#212529;
+  color: #212529;
   justify-content: center;
 }
 
@@ -182,13 +177,21 @@ nav {
 
 footer {
   text-align: center;
-  padding: 1rem;
+  padding: 1rem 0;
+  background-color: #000;
 }
 
 .link {
-  color:#212529;
+  color: #fed136;
 }
 
 .link:hover {
-  color: #fed136;
+  color: #fff;
+}
+
+#contenedorProyectos{
+  padding-top: 100px;
+  padding-bottom: 100px;
+  text-align: center;
+  width: 100%;
 }
