@@ -191,14 +191,20 @@ h1 {
 
 .sectionWhite {
     background-color: #fff;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 100%;
+}
+
+.pJustify {
+    display: flex;
+    justify-content: center;
 }
 
 .sectionColorYellow {
     background-color: #fed136;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     text-align: center;
     width: 100%;
 }
@@ -212,13 +218,14 @@ h1 {
 
 footer {
     text-align: center;
-    padding: 1rem;
+    padding: 1rem 0;
+    background-color: #000;
 }
 
 .link {
-    color: #212529;
+    color: #fed136;
 }
 
 .link:hover {
-    color: #fed136;
+    color: #fff;
 }

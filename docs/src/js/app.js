@@ -1,31 +1,31 @@
 $(document).on("scroll", function () {
-    if
-    ($(document).scrollTop() > 86) {
-        $("#banner").addClass("shrink");
-    }
-    else {
-        $("#banner").removeClass("shrink");
-    }
+  if
+  ($(document).scrollTop() > 86) {
+    $("#banner").addClass("shrink");
+  }
+  else {
+    $("#banner").removeClass("shrink");
+  }
 });
 /*Para llamar a cada sección del portafolio*/
 function aHome() {
-    location.href = "#home";
+  location.href = "#home";
 }
 function aProyectos() {
-    location.href = "#contenedorProyectos";
+  location.href = "#contenedorProyectos";
 }
 function aMi() {
-    location.href = "#aboutMe";
+  location.href = "#aboutMe";
 }
 function marketPlace() {
-    location.href = "#malaMadre";
+  location.href = "#malaMadre";
 }
 function redSocial() {
-    location.href = "#celiBook";
+  location.href = "#celiBook";
 }
 function registroPersonas() {
-    location.href = "#ifBlanco";
+  location.href = "#ifBlanco";
 }
 function footer() {
-    location.href = "#contacto";
+  location.href = "#contacto";
 }
