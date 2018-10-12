@@ -2,650 +2,274 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Cardo|Lato" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
-        crossorigin="anonymous">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-        crossorigin="anonymous">
-    <link rel="stylesheet" href="src/css/style.css">
-    <link rel="stylesheet" href="src/css/stylemarketplace.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Cardo|Lato" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="src/css/style.css">
+  <link rel="stylesheet" href="src/css/stylemarketplace.css">
+  <link rel="stylesheet" href="src/css/stylemisfinanzas.css">
 
-    <title>Market Place</title>
-    <link rel="shortcut icon" type="image/x-icon" href="assets/imgmarketplace/LogoMMS2.png" />
+
+  <title>Market Place</title>
+  <link rel="shortcut icon" type="image/x-icon" href="assets/imgmarketplace/LogoMMS2.png" />
 
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top" id="banner">
-        <div class="container">
-            <!-- Brand -->
-            <a class="navbar-brand" href="index.html" onclick="ahome()">
-                <span>Constanza</span> García</a>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top" id="banner">
+    <div class="container">
+      <!-- Brand -->
+      <a class="navbar-brand" href="index.html" onclick="ahome()">
+        <span>Constanza</span> García</a>
 
-            <!-- Toggler/collapsibe Button -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+      <!-- Toggler/collapsibe Button -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-            <!-- Navbar links -->
-            <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="aboutme.html">Sobre mi</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contacto" onclick="footer()">Contacto</a>
-                    </li>
-                    <!-- Dropdown -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" onclick="aProyectos()" data-toggle="dropdown">
-                            Proyectos
-                        </a>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="redsocial.html" onclick="redSocial()">Red Social</a>
-                            <a class="dropdown-item" href="marketplace.html" onclick="marketPlace()">Market Place</a>
-                            <a class="dropdown-item" href="misfinanzas.html" onclick="registroPersonas()">Fitch APP</a>
-                        </div>
-                    </li>
-                </ul>
+      <!-- Navbar links -->
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="aboutme.html">Sobre mi</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contacto" onclick="footer()">Contacto</a>
+          </li>
+          <!-- Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" onclick="aProyectos()" data-toggle="dropdown">
+              Proyectos
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="redsocial.html" onclick="redSocial()">Red Social</a>
+              <a class="dropdown-item" href="marketplace.html" onclick="marketPlace()">Market Place</a>
+              <a class="dropdown-item" href="misfinanzas.html" onclick="registroPersonas()">Fitch APP</a>
             </div>
-        </div>
-    </nav>
-
-    <div class="banner">
-        <div class="container">
-            <div class="banner-text">
-                <div class="banner-heading">
-                    Market Place
-                </div>
-                <div class="banner-sub-heading">
-                    Plataforma de Ventas en Línea
-                </div>
-                <!--  <button type="button" class="btn btn-warning text-dark btn-banner">Conoce mi trabajo</button> -->
-            </div>
-        </div>
+          </li>
+        </ul>
+      </div>
     </div>
+  </nav>
 
-    <section class="container-fluid sectionWhite">
-        <div class="container">
-            <div class="row pJustify">
-                <div class="col-12 col-lg-6">
-                    <p>¿De qué forma posicionas un emprendimiento si solo estas vendiendo por Instagram? Ese es el desafío del
-                        proyecto Market Place: Asesorar a uno de los miembros de la Asociación Nacional de Pequeños Comerciantes
-                        en la creación de un portal desde donde los consumidores adquieran sus productos sin intermediarios.
-                        Mala madre store es el emprendimiento de Marlenne Peña, quien confecciona monederos, estuches, fundas
-                        para laptop, tablet, morrales, totebag, además de cojines decorativos con formas de animales. Todos
-                        utilizan la técnica de la sublimación y son elaborados 100% por las manos de su dueña. .
-                    </p>
-                </div>
-            </div>
-            <div class="row pJustify">
-                <div class="col-12 col-lg-6">
-
-                    <p>
-                        <b> Solución</b>: unificar las plataformas de comunicación entre las personas que desean adquirir los
-                        productos y la misma dueña de la marca. Por ello, vamos a crear un sitio web para concretar las ventas
-                        a través de un sistema de compra online con carro de compras el que además tendrá en su interfaz
-                        un catálogo de todos los productos que MalaMadre realiza..</p>
-                    <p>
-                        <b> Duración</b>: 3 semanas.</p>
-                </div>
-            </div>
+  <div class="banner">
+    <div class="container">
+      <div class="banner-text">
+        <div class="banner-heading">
+          Market Place
         </div>
-    </section>
-    <section class="sectionColorYellow">
-        <div class="container-fluid etapasProyecto">
-            <div class="row">
-                <div class="col-12">
-                    <h3>Etapas del proyecto</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-2">
-                    <img class="" src="assets/img/problema.png" alt="">
-                    <p> Entendimiento del problema</p>
-                </div>
-                <div class="col-md-2">
-                    <img class="" src="assets/img/entrevista.png" alt="">
-                    <p>Entrevista con el cliente/usuarios</p>
-                </div>
-                <div class="col-md-2">
-                    <img class="" src="assets/img/lluviadeideas.png" alt="">
-                    <p>Lluvia de ideas</p>
-                </div>
-                <div class="col-md-2">
-                    <img class="" src="assets/img/protitotipo.png" alt="">
-                    <p> Sketch/Prototipo</p>
-                </div>
-                <div class="col-md-2">
-                    <img class="" src="assets/img/testimg.png" alt="">
-                    <p>Testeo</p>
-                </div>
-            </div>
+        <div class="banner-sub-heading">
+          Plataforma de Ventas en Línea
         </div>
-    </section>
+        <!--  <button type="button" class="btn btn-warning text-dark btn-banner">Conoce mi trabajo</button> -->
+      </div>
+    </div>
+  </div>
 
 
-    <section class="container-fluid sectionWhite">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 ">
-                    <h3></h3>
-                </div>
-            </div>
-            <div class="row pJustify">
-                <div class="col-12 col-lg-6">
-                    <p>
-                        Conocer el funcionamiento de la asociación era una pieza elemental para saber de qué forma debíamos asesorar a este emprendedora
-                        pero más aún lo era conocer a Marlenne y las razones que la motivaron a abrir este emprendimiento
-                        por Instagram. ¿Por qué Instagram y no otra red social? ¿Por qué solo ese medio? ¿Quiénes son sus
-                        consumidores? ¿Por qué prefieren comprar a través de una red social? Estas interrogantes nos ayudaron
-                        a resolver el user persona. Identificar a sus usuarias nos sirvió para saber en qué nuevos canales
-                        podríamos insertar este emprendimiento.
 
-                    </p>
-                </div>
-
-            </div>
-            <div class="row pJustify">
-
-                <div class=" col-lg-3 col-12">
-                    <img class="img-fluid " src="assets/imgmarketplace/capturapantallamalamadrepc.PNG" alt="">
-                </div>
-                <div class=" col-lg-3 col-12">
-                    <img class="img-fluid " src="assets/imgmarketplace/Screenshot_20180824-005426.png" alt="">
-                </div>
-                <div class=" col-lg-3 col-12">
-                    <img class="img-fluid " src="assets/imgmarketplace/Screenshot_20180824-005435.png" alt="">
-
-                </div>
-
-            </div>
-            <div class="row tittleUser">
-                <div class="col-12">
-                    <h4>
-                    </h4>
-                </div>
-            </div>
-            <div class="row pJustify">
-                <div class="col-12 col-lg-6">
-                    <p>
-
-                    </p>
-                </div>
-            </div>
+  <section class="sectionWhite">
+    <div class="container-fluid">
+      <div class="row pJustify">
+        <div class="col-md-12">
+          <p style="text-align: justify">¿De qué forma posicionas un emprendimiento si solo estas vendiendo por Instagram? Ese es el desafío del proyecto
+            Market Place: Asesorar a uno de los miembros de la Asociación Nacional de Pequeños Comerciantes en la creación
+            de un portal desde donde los consumidores adquieran sus productos sin intermediarios. Mala madre store es el
+            emprendimiento de Marlenne Peña, quien confecciona monederos, estuches, fundas para laptop, tablet, morrales,
+            totebag, además de cojines decorativos con formas de animales. Todos utilizan la técnica de la sublimación y
+            son elaborados 100% por las manos de su dueña. </p>
         </div>
-    </section>
-    <section class="container-fluid sectionColor">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <h3>
-                        Proceso de investigación
-                    </h3>
-                </div>
-            </div>
-            <div class="row pJustify">
-                <div class="col-12 col-lg-6">
-                    <p>
-                        Para conocer nuestro emprendimiento realizamos una
-                        <b>entrevista</b> profundidad con la secretaria de la asociación de Nacional de Pequeños Comerciates.
-                        De esta forma, conocimos como funciona su asociación, los requisitos que deben cumplir los emprendedores
-                        para ser parte de ella y cuales eran las motivaciones para solicitar la asesoría.
-                    </p>
-                    <p>
-                        Uno de los beneficios que tiene pertenecer a la asociación es que está te otorga un sitio web, con pago de hosting y dominio
-                        por dos años para los emprendimientos, con el fin de que estos puedan aumentar las ganancias de sus
-                        ventas y llegar a otros publicos..
-                    </p>
-                    <p>
-                        También, realizamos una
-                        <b>entrevista a la emprendora Marlenne</b>. Esta nos contó sobre las motivaciones que tuvo para emprender
-                        con Mala Madre Store, en que consiste su trabajo y de que forma lo lleva a cabo día a día. Además,
-                        de revelarnos aspectos importantes de su vida personal que van de la mano con lo que ella realiza.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="container-fluid sectionWhite">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <h3>
-                        Perfil del emprendimiento y la emprendedora
-                    </h3>
-                </div>
-
-            </div>
-            <div class="row pJustify">
-                <div class="col-12 col-lg-6">
-                    <img src="assets/imgmarketplace/malamadregeneral2.jpg" class="img-fluid " alt="...">
-                </div>
-                <div class="col-12 col-lg-6 pPerfil">
-                    <p>
-                        Luego, hicimos una revisión de la red social en la que funciona el emprendiminto. En ella logramos conocer cuales eran los
-                        productos que confecciona, los materiales que utiliza, como tipo de telas y estampados, y de que
-                        forma administra los post y comentarios.
-                    </p>
-                    <p>
-                        Con su Instagram nos dimos cuenta que
-                        <b>no existe una periocidad en la publicación de los contenidos </b>, tampoco se dan a conocer los valores
-                        de los productos de forma publica, si no que a través de un mensaje interno que ella envía a la persona
-                        que los solicita. La cuenta tiene publicaciones desde marzo del año 2018 y ya cuenta con 2986 seguidores
-                        a la fecha.
-                    </p>
-                    <p>
-                        A través de los comentarios, identificamos que no existe una respuesta tipo para acercarse a las personas que solicitan más
-                        información como valores o lugares de entrega.
-                    </p>
-                    <p>
-                        Consideramos que la información anterior ya nos permite identificar cuales son los problemas que presenta el emprendimiento
-                        y de que forma nosotras podemos enfrentar el problema, siempre orientados en la solicitud de la asociación
-                        de asesorar a Marlenne y que esta mejore su sistema de ventas.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="container-fluid sectionColor2">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <h3 class="sintesisTittle">
-                        Sintesis del emprendimiento
-                    </h3>
-                </div>
-            </div>
-            <div class="row pJustify">
-                <div class="col-12 col-lg-6 pPerfil">
-                    <p class="pWhite">
-                        Para continuar con nuestro proceso de investigación realizamos un
-                        <a href="https://docs.google.com/spreadsheets/d/1JT0NK2rnjSCjd2QY9a0XJjL_j0aM6eKRbmY4Xm31kgw/edit#gid=0">Benchmark</a> , en el que comparamos otros emprendimientos de similares características que Mala
-                        Madre Store. Nuestro propósito es reconocer cuales son las mejores prácticas que estos realizan y
-                        que les han permitido ser exitosos. Considerando exitoso que llevan más de un año vendiendo productos
-                        a través de internet por canales directos (propios) o indirectos (pertenecientes a terceros).
-                    </p>
-                    <p class="pWhite">
-                        Esta parte de la investigación nos permite a su vez orientar hacía donde debemos llevar el curso de las ventas de Marlenne
-                        para que sean más existosas y logren sostenerse con el tiempo.
-                    </p>
-                </div>
-                <div class="col-12 col-lg-6">
-                    <img src="img/sintesis de malamadre dos.jpeg" class="img-fluid" alt="">
-                </div>
-            </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <b style="text-align: justify"> Solución</b>:
+          <p style="text-align: justify">
+            unificar las plataformas de comunicación entre las personas que desean adquirir los productos y la misma dueña de la marca.
+            Por ello, vamos a crear un sitio web para concretar las ventas a través de un sistema de compra online con carro
+            de compras el que además tendrá en su interfaz un catálogo de todos los productos que MalaMadre realiza
+            <b> Duración</b>: 3 semanas.</p>
 
         </div>
-    </section>
-    <section class="container-fluid sectionWhite">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <h3>
-                        El Problema
-                    </h3>
-                </div>
-            </div>
-            <div class="row pJustify">
-                <div class="col-12 col-lg-3">
-                    <p>
-                        MalaMadreStore está inserto solo en una red social : Instagram, esto limita su público a solo los usuarios de esa red.
-                    </p>
-                </div>
-                <div class="col-12 col-lg-3">
-                    <p>
-                        Las entregas las realiza solo los días sábado a las 13:30 en el metro Quinta Normal, previo abono de al menos el 50 % del
-                        total de la compra. Los usuarios que no pueden ese día deben gestionar una posible entrega en metro
-                        Irarrazaval donde la pareja de Marlenne tiene su trabajo y si eres de región, puedes gestionar envió
-                        por pagar a través de starken.
-                    </p>
-                </div>
-                <div class="col-12 col-lg-3">
-                    <p>
-                        Ambas opciones de entrega en Santiago limitan al público que quiere adquirir un producto de un día para otro o en menos tiempo.
-                    </p>
-                </div>
-                <div class="col-12 col-lg-3">
-                    <p>
-                        En sus redes sociales, no existe un catálogo con precios, productos, medidas de productos que permitan a los usuarios ver
-                        todo lo que pueden adquirir de la tienda. Esto lleva a que MalaMadreStore, tenga menos venta porque
-                        pierde clientes al no dejar clara esta información y que no se dan el trabajo de revisar su Instagram
-                        para ver todo lo que hace.
-                    </p>
-                </div>
-            </div>
-            <div class="row bJustify">
-                <div class="col-12">
-                    <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo">Ver más</button>
-                </div>
-            </div>
-            <div class="row pJustify">
-                <div id="demo" class="collapse">
-                    <div class="col-12 col-lg-6">
-                        <table class="table table-bordered">
-                            <thead>
-                                <tr>
-                                    <th scope="col"> Primer Problema </th>
-                                    <th scope="col">Segundo Problema</th>
-                                    <th scope="col">Tercer Problema</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Solo una red social: Instagram</td>
-                                    <td>Hora y día de entrega: Sábado 13:30 hrs. metro Quinta Normal</td>
-                                    <td>No existe catálogo de productos</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div class="col-12 col-lg-6">
-                        <table class="table table-bordered">
-                            <thead>
-                                <tr>
-                                    <th scope="col"> Primera Solución </th>
-                                    <th scope="col">Segunda Solución</th>
-                                    <th scope="col">Tercera Solución</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Abrir cuentas en otras redes sociales como Facebook para llegar a otros públicos.</td>
-                                    <td>Gestionar un sistema de entregas amigable que funcione otros días a la semana</td>
-                                    <td>Gestionar un catálogo con medidas, precios, diseños de todos los productos que realiza.</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div class="row">
-                        <div class="col-12 col-lg-12">
-                            <h5>
-                                Luego de revisar las cuenta de Instagram de MalaMadreStore identificamos tres problemas:
-                            </h5>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-12 col-lg-6">
-                            <table class="table table-bordered">
-                                <thead>
-                                    <tr>
-                                        <th scope="col">Primer Problema</th>
-                                        <th scope="col">Segundo Problema</th>
-                                        <th scope="col">Tercer Problema</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>No existe una transparencia en los precios. Cuando una persona consulta el valor
-                                            la emprendedora responde que por interno. Lo que obligatoriamente lleva a que
-                                            le debas escribir.</td>
-                                        <td>No existe una transparencia en los precios. Cuando una persona consulta el valor
-                                            la emprendedora responde que por interno. Lo que obligatoriamente lleva a que
-                                            le debas escribir.</td>
-                                        <td>No está claro la forma de compra ni de pago al momento de ingresar a la cuenta de
-                                            instagram.
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <div class="col-12 col-lg-6">
-                            <table class="table table-bordered">
-                                <thead>
-                                    <tr>
-                                        <th scope="col"> Primera Solución </th>
-                                        <th scope="col">Segunda Solución</th>
-                                        <th scope="col">Tercera Solución</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>Catálogo con precios claros</td>
-                                        <td>Catalogo con todos los productos que ella realiza con diseños y medidas</td>
-                                        <td>Gestionar un carrito de compra con detalle y pago online de los productos.</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12 col-lg-12">
-                    <img src="assets/imgmarketplace/WhatsApp Image 2018-08-22 at 16.08.20.jpeg" class="img-fluid" alt="">
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="container-fluid sectionColor">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-lg-12">
-                    <h3>Definición del público objetivo</h3>
-                </div>
-            </div>
-            <div class="row pJustify">
-                <div class="col-12 col-lg-6">
-                    <p>
-                        De acuerdo a lo conversado con nuestra emprendedora y posterior a la experiencia de ser un cliente incognico, identificamos
-                        quienes eran los tres tipos de usuarios que se acercan a las red social de mala madre para adquirir
-                        sus trabajos.
-                    </p>
-                    <p>
-                        Realizamos un user persona, que representa los poteciales compradores. Con esto esperamos comenzar a generar contenido en
-                        el sitio web para ofrecer una solución a un problema que tienen los clientes.
-                    </p>
-                    <p>
-                        Complementamos esta parte con un customer journey map , que nos permite analizar el ciclo de compra desde la perspectiva
-                        del cliente, cómo este se siente, qué expectativas tiene entre otras cosas.
-                    </p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12 col-lg-12 tittleUser ">
-                    <h3> User Persona y Journey Map</h3>
-                </div>
-            </div>
-            <div class="row bJustify">
-                <div class="col-12 col-lg-12 imgS">
-                    <img src="assets/imgmarketplace/userpersona-ana.png" class="img-fluid" alt="">
-                </div>
-                <div class="col-12 col-lg-12">
-                    <img src="assets/imgmarketplace/customerjourneymaana.PNG" class="img-fluid" alt="">
+      </div>
+    </div>
+  </section>
 
-                </div>
-            </div>
-            <div class="row bJustify">
-                <div class="col-12">
-                    <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo2">Ver más</button>
-                </div>
-            </div>
-            <div class="row bJustify">
-                <div id="demo2" class="collapse">
-                    <div class="col-12 col-lg-12 imgS">
-                        <img src="assets/imgmarketplace/userpersona-patricia.PNG" class="img-fluid" alt="">
-                    </div>
-                    <div class="col-12 col-lg-12 imgS">
-                        <img src="assets/imgmarketplace/customerjourneymappatricia.PNG" class="img-fluid" alt="">
-                    </div>
-                    <div class="col-12 col-lg-12 imgS">
-                        <img src="assets/imgmarketplace/userpersona-pedro.PNG" class="img-fluid" alt="">
-                    </div>
-                    <div class="col-12 col-lg-12">
-                        <img src="assets/imgmarketplace/customerjourneymappedro.PNG" class="img-fluid" alt="">
-                    </div>
-                </div>
-            </div>
+  <section class="sectionColorYellow">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12">
+          <h3>Etapas del proyecto</h3>
         </div>
-    </section>
-    <section class="container-fluid sectionWhite">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-lg-12">
-                    <h3>
-                        Definición de la solución/producto
-                    </h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12 imgS">
-                    <img src="assets/imgmarketplace/carshortingcortado.jpeg" class="img-fluid " alt="...">
-                </div>
-            </div>
-            <div class="row pJustify">
-                <div class="col-12 col-lg-6">
-                    <p>
-                        Luego de investigar el emprendimiento, consideramos que la solución para mejorar su sistema de ventas es
-                        <b>unificar las plataformas de comunicación</b> entre las personas que desean adquirir los productos
-                        y la misma dueña de la marca. Por ello, vamos a
-                        <b>crear un sitio web para concretar las ventas a través de un sistema de compra online con carro de
-                            compras el que además tendrá en su interfaz un catalogo de todos los productos que MalaMadre
-                            realiza.
-                        </b> Se abrirá una cuenta en Facebook que se complementará con la de Instagram que ya existe y su
-                        uso será solo para difusión y promoción de los productos, complementado con posteos y/o publicaciones
-                        con las experiencias de otras personas que ya hayan adquirido alguno de sus productos. Con esto,
-                        esperamos que exista un proceso más expedito y flexible para comprar y despachar los productos de
-                        Mala Madre Store. A su vez esperamos que de esta forma pueda llevar un flujo más ordenado de sus
-                        ventas y en un período de seis meses comience a ver un incremento en sus ventas.
-                    </p>
-                    <p>
-                        Para la construcción del sitio web, realizamos un inventario de todos los contenidos que se incluirán en el sitio. Mala Madre
-                        realiza más de 40 productos que varían según sus telas y tamaños. Si quieres revisar la lista complenta
-                        ingresa
-                        <a href="https://docs.google.com/spreadsheets/d/1h5-4zg4A61DLnyGbG_3oXJaiLcN2DqwU1KyW3f3Vp98/edit#gid=0">aquí.</a>
-                    </p>
-                    <p>
-                        Una vez realizado este trabajo, hicimos un mapa del sitio con la organización de los contenidos que vamos a incluir en la
-                        construcción del nuevo portal según el viaje que realiza el usuario.
-                    </p>
-                </div>
-            </div>
-            <div class="row bJustify">
-                <div class="col-12 col-lg-12 ">
-                    <a target='_blank' href="assets/imgmarketplace/siteMap.jpeg">
-                        <button type="button" class="btn btn-primary" data-toggle="collapse">Ver Mapa del Sitio</button>
-                    </a>
-                </div>
-            </div>
-            <div class="row pJustify">
-                <div class="col-lg-6 col-12">
-                    <p>
-                        En este mapa del sitio planteamos el contenido utilizando la estructura en red, donde todas las páginas estan relacionadas
-                        entre si y permiten al usuario ir navegando de forma libre por el sitio pero a su vez, una vez que
-                        ingresan al carro de compras se encuentran con una estructura lineal donde solo siguien cada paso
-                        podrán concretar su compra.
-                    </p>
-                    <p>
-                        Con esta información realizamos un prototipo de baja fidelidad.
-                    </p>
-                </div>
-            </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <img class="" src="assets/img/problema.png" alt="">
+          <p> Entendimiento del problema</p>
         </div>
-    </section>
-    <section class="container-fluid sectionColor2">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-lg-12">
-                    <h3 class="pWhite">
-                        Prototipo de Baja Fidelidad
-                    </h3>
-                </div>
-            </div>
-            <div class="row bJustify">
-                <div class="col-12 col-lg-12 imgS">
-                    <img src="assets/imgmarketplace/2018-08-20-145903.jpg" class="img-fluid" alt="">
-                </div>
-                <div class="col-12 col-lg-12 imgS">
-                    <img src="img/2018-08-20-150217.jpg" class="img-fluid" alt="">
-                </div>
-                <div class="col-12 col-lg-12 imgS">
-                    <img src="img/2018-08-20-150334.jpg" class="img-fluid" alt="">
-                </div>
-                <div class="col-12 col-lg-12 imgS">
-                    <img src="img/2018-08-20-150805.jpg" class="img-fluid" alt="">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12 col-lg-12">
-                    <h3 class="pWhite">
-                        Testing con Prototipo de Baja Fidelidad
-                    </h3>
-                </div>
-            </div>
+        <div class="col-md-4">
+          <img class="" src="assets/img/entrevista.png" alt="">
+          <p>Entrevista con el cliente/usuarios</p>
         </div>
-    </section>
-    <section class="container-fluid">
-        <div class="row bJustify">
-            <div class="col v-container">
-                <iframe src="https://www.youtube.com/embed/-QvGOP4ZNi8?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-            </div>
+        <div class="col-md-4">
+          <img class="" src="assets/img/lluviadeideas.png" alt="">
+          <p>Lluvia de ideas</p>
         </div>
-    </section>
-    <section class="container-fluid sectionWhite">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-lg-12">
-                    <h3>Prototipo navegable</h3>
-                </div>
-            </div>
-            <div class="row colJustify">
-                <div class="col-12 col-lg-6">
-                    <p>
-                        Los testing al prototipo de baja fidelidad nos dieron el feedback para comenzar a realizar el prototipo de alta. Logramos
-                        identificar los problemas que tenían los usuarios para seleccionar un producto del catálogo, llegar
-                        a él les costaba o no sabían dónde hacer clic. Con esto, realizamos el prototipo de alta fidelidad
-                        que también fue testead
-                    </p>
+      </div>
+      <div class="row">
+
+        <div class="col-md-6">
+          <img class="" src="assets/img/protitotipo.png" alt="">
+          <p> Sketch/Prototipo</p>
+        </div>
+        <div class="col-md-6">
+          <img class="" src="assets/img/testimg.png" alt="">
+          <p>Testeo</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sectionInvestigacion">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12" id="investigacion">
+          <h3>Investigación</h3>
+          <p style="text-align: justify"> Conocer el funcionamiento de la asociación era una pieza elemental para saber de qué forma debíamos asesorar a
+            este emprendedora pero más aún lo era conocer a Marlenne y las razones que la motivaron a abrir este emprendimiento
+            por Instagram. ¿Por qué Instagram y no otra red social? ¿Por qué solo ese medio? ¿Quiénes son sus consumidores?
+            ¿Por qué prefieren comprar a través de una red social? Estas interrogantes nos ayudaron a resolver el user persona.
+            Identificar a sus usuarias nos sirvió para saber en qué nuevos canales podríamos insertar este emprendimiento.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <img class=" img-fluid " src="assets/imgmarketplace/capturapantallamalamadrepc.PNG" alt=" ">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12" id="investigacion">
+          <h3>Entrevistas</h3>
+          <p style="text-align: justify"> Para conocer nuestro emprendimiento realizamos una
+            <b>entrevista</b> profundidad con la secretaria de la asociación de Nacional de Pequeños Comerciates. De esta forma,
+            conocimos como funciona su asociación, los requisitos que deben cumplir los emprendedores para ser parte de ella
+            y cuales eran las motivaciones para solicitar la asesoría.
+          </p>
+
+          <p style="text-align: justify"> También, realizamos una
+            <b>entrevista a la emprendora Marlenne</b>. Esta nos contó sobre las motivaciones que tuvo para emprender con Mala
+            Madre Store, en que consiste su trabajo y de que forma lo lleva a cabo día a día. Además, de revelarnos aspectos
+            importantes de su vida personal que van de la mano con lo que ella realiza.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <img class=" img-fluid " src="assets/imgmisfinanzas/estadisticasamarillas.jpg" alt=" ">
+        </div>
+      </div>
 
 
-                </div>
-                <div class="col-12 col-lg-6 v-container">
+      <div class="row">
+        <div class="col-md-12" id="investigacion">
+          <h3>El problema</h3>
+          <p style="text-align: justify">
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th scope="col"> Primer Problema </th>
+                  <th scope="col">Segundo Problema</th>
+                  <th scope="col">Tercer Problema</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Solo una red social: Instagram</td>
+                  <td>Hora y día de entrega: Sábado 13:30 hrs. metro Quinta Normal</td>
+                  <td>No existe catálogo de productos</td>
+                </tr>
+              </tbody>
+            </table>
+          </p>
 
-                    <iframe src="https://marvelapp.com/e9a1g69?emb=1&iosapp=false&frameless=false" allowTransparency="true" frameborder="0"></iframe>
-                </div>
-            </div>
+          <p style="text-align: justify"> Una vez que logramos entender cual eran sus necesidades y problemas, realizamos un Benchmark para conocer otros
+            emprendimientos. Con toda esta información comenzamos a realizar el prototipos de baja fidelidad que testeamos
+            con usuarios para luego iterar en un prototipo de alta fidelidad.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <img class=" img-fluid" src="assets/imgmisfinanzas/insightentrevista.jpg" alt=" ">
+        </div>
+      </div>
+  </section>
+
+  <section class="sectionInvestigacion">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <h3>Prototipo Alta Fidelidad</h3>
+          <p style="text-align: justify">
+            Los testing al prototipo de baja fidelidad nos dieron el feedback para comenzar a realizar el prototipo de alta. Logramos
+            identificar los problemas que tenían los usuarios para seleccionar un producto del catálogo, llegar a él les
+            costaba o no sabían dónde hacer clic. Con esto, realizamos el prototipo de alta fidelidad que también fue testeado.
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <iframe src="https://marvelapp.com/e9a1g69?emb=1&iosapp=false&frameless=false" width="390" height="755" allowTransparency="true"
+            frameborder="0"></iframe>
 
         </div>
-    </section>
+      </div>
+
+    </div>
+  </section>
 
 
-    <footer id="contacto">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="mb-5 flex-center">
-                    <a class="link" href="https://www.linkedin.com/in/constanza-garcia-madrid/">
-                        <i class="fab fa-linkedin mr-md-5 mr-3 fa-2x"></i>
-                    </a>
 
-                    <a class="link" href="o.conii.o@gmail.com">
-                        <i class="fas fa-envelope-square mr-md-5 mr-3 fa-2x"></i>
-                    </a>
 
-                    <a class="link" href="https://www.twitter.com/abretubocaa">
-                        <i class="fab fa-twitter-square mr-md-5 mr-3 fa-2x"></i>
-                    </a>
 
-                    <a class="link" href="https://medium.com/@ConstanzaGarcia">
-                        <i class="fab fa-medium mr-md-5 mr-3 fa-2x"></i>
-                    </a>
-                </div>
-            </div>
+
+  <footer id="contacto">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="mb-5 flex-center">
+          <a class="link" href="https://www.linkedin.com/in/constanza-garcia-madrid/">
+            <i class="fab fa-linkedin mr-md-5 mr-3 fa-2x"></i>
+          </a>
+
+          <a class="link" href="o.conii.o@gmail.com">
+            <i class="fas fa-envelope-square mr-md-5 mr-3 fa-2x"></i>
+          </a>
+
+          <a class="link" href="https://www.twitter.com/abretubocaa">
+            <i class="fab fa-twitter-square mr-md-5 mr-3 fa-2x"></i>
+          </a>
+
+          <a class="link" href="https://medium.com/@ConstanzaGarcia">
+            <i class="fab fa-medium mr-md-5 mr-3 fa-2x"></i>
+          </a>
         </div>
-    </footer>
+      </div>
+    </div>
+  </footer>
 
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-        crossorigin="anonymous"></script>
-    <script src="https://use.fontawesome.com/7cdd7a07f8.js"></script>
-    <script src="src/js/app.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+  <script src="https://use.fontawesome.com/7cdd7a07f8.js"></script>
+  <script src="src/js/app.js"></script>
 
 
 </body>

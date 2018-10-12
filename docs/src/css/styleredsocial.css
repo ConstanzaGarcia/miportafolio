@@ -1,36 +1,23 @@
-
-
 .banner {
   background-image: url(../../assets/imgredsocial/sin-gluten-transparente.png);
 }
 
-h1 {
-  text-align: center;
-  font-family: "Lato";
-  padding-bottom: 0px;
-  margin-bottom: 30px;
-  margin-top: 80px;
-  font-weight: bold;
-  text-shadow: #fff 0.1em 0.1em 0.4em;
-}
-
 .sectionWhite {
   background-color: #fff;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+  text-align: justify;
 }
 
 .sectionColorYellow {
-  background-color: #fed136;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  border: 3px solid #fed136;
+  padding-top: 50px;
+  padding-bottom: 50px;
   text-align: center;
-  width: 100%;
-}
-
-.pJustify {
-  display: flex;
-  justify-content: center;
+  width: 50%;
+  padding: 10px;
+  margin: auto;
 }
 
 /*Pie de pagina con rrss*/

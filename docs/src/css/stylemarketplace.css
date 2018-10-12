@@ -30,11 +30,13 @@ h1 {
 }
 
 .sectionColorYellow {
-  background-color: #fed136;
+  border: 3px solid #fed136;
   padding-top: 50px;
   padding-bottom: 50px;
   text-align: center;
-  width: 100%;
+  width: 50%;
+  padding: 10px;
+  margin: auto;
 }
 
 h3 {
