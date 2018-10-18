@@ -14,50 +14,48 @@
     <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
     <link rel="stylesheet" href="src/css/style.css">
 
-    <link rel="stylesheet" href="src/css/styleaboutme.css">
 
     <link rel="stylesheet" href="src/css/stylemisfinanzas.css">
+    <link rel="stylesheet" href="src/css/styleaboutme.css">
 
 
     <title>Constanza García</title>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top" id="banner">
-        <div class="container">
-            <!-- Brand -->
-            <a class="navbar-brand" href="index.html" onclick="ahome()">
-                <span>Constanza</span> García</a>
 
-            <!-- Toggler/collapsibe Button -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <!-- Navbar links -->
-            <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="aboutme.html">Sobre mi</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contacto" onclick="footer()">Contacto</a>
-                    </li>
-                    <!-- Dropdown -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" onclick="aProyectos()" data-toggle="dropdown">
-                            Proyectos
-                        </a>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="redsocial.html" onclick="redSocial()">Red Social</a>
-                            <a class="dropdown-item" href="marketplace.html" onclick="marketPlace()">Market Place</a>
-                            <a class="dropdown-item" href="misfinanzas.html" onclick="registroPersonas()">Fitch APP</a>
-                        </div>
-                    </li>
-                </ul>
-            </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand col-lg-3 col-8" href="index.html" onclick="ahome()">
+            <span>Constanza</span> García</a>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon">
+                <i class="fa fa-navicon"></i>
+            </span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="aboutme.html">Sobre mi</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" onclick="aProyectos()" data-toggle="dropdown">
+                        Proyectos
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="redsocial.html" onclick="redSocial()">Red Social</a>
+                        <a class="dropdown-item" href="marketplace.html" onclick="marketPlace()">Market Place</a>
+                        <a class="dropdown-item" href="misfinanzas.html" onclick="registroPersonas()">Fitch APP</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contacto" onclick="footer()">Contacto</a>
+                </li>
+            </ul>
         </div>
     </nav>
+
 
     <div class="banner">
         <div class="container">
@@ -71,7 +69,7 @@
             </div>
         </div>
     </div>
-    <section>
+    <section class="aboutme">
         <div class="container">
             <div class="text-intro">
                 <h2>Sobre mí</h2>
@@ -80,6 +78,12 @@
                     al bienestar de las personas, logrando generar un mundo más inclusivo. En mi experiencia he aprendido
                     a utilizar herramientas de marketing, metodología ágil y gestión de procesos. Busco convertirme en docente
                     ya que me apasiona el poder retribuir lo que he aprendido sobre las áreas de marketing y UX Designer.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <img class="img-fluid perfil" src="assets/img/IMG_2757.jpg" height="500px" width="400px" alt=" ">
             </div>
         </div>
     </section>
@@ -136,6 +140,23 @@
         </div>
     </section>
 
+    <section>
+        <div class="container">
+            <div class="text-intro">
+                <h2>Voluntariados</h2>
+                <p>Durante cinco años fuí voluntaria de Fundación Iguales donde realice labores en la comisión de comunicaciones
+                    e intervención. Esta última comisión pude realizar charlas en distintos establecimientos sobre diversidad
+                    sexual y género. Además de organizar distintas actividades masivas respecto al mismo tema. Durante dos
+                    años lidere la comisión lo que me permitió desarrollar distintas habilidades.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class=" img-fluid" src="assets/imgmisfinanzas/insightentrevista.jpg" alt=" ">
+            </div>
+        </div>
+    </section>
+
     <section class="" id="tools">
 
     </section>
@@ -147,27 +168,27 @@
 
 
     <footer id="contacto">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="mb-5 flex-center">
-                    <a class="link" href="https://www.linkedin.com/in/constanza-garcia-madrid/">
-                        <i class="fab fa-linkedin mr-md-5 mr-3 fa-2x"></i>
-                    </a>
 
-                    <a class="link" href="o.conii.o@gmail.com">
-                        <i class="fas fa-envelope-square mr-md-5 mr-3 fa-2x"></i>
-                    </a>
+        <div class="col-md-12">
+            <div class="mb-5 flex-center">
+                <a class="link" href="https://www.linkedin.com/in/constanza-garcia-madrid/">
+                    <i class="fab fa-linkedin mr-md-5 mr-3 fa-2x"></i>
+                </a>
 
-                    <a class="link" href="https://www.twitter.com/abretubocaa">
-                        <i class="fab fa-twitter-square mr-md-5 mr-3 fa-2x"></i>
-                    </a>
+                <a class="link" href="o.conii.o@gmail.com">
+                    <i class="fas fa-envelope-square mr-md-5 mr-3 fa-2x"></i>
+                </a>
 
-                    <a class="link" href="https://medium.com/@ConstanzaGarcia">
-                        <i class="fab fa-medium mr-md-5 mr-3 fa-2x"></i>
-                    </a>
-                </div>
+                <a class="link" href="https://www.twitter.com/abretubocaa">
+                    <i class="fab fa-twitter-square mr-md-5 mr-3 fa-2x"></i>
+                </a>
+
+                <a class="link" href="https://medium.com/@ConstanzaGarcia">
+                    <i class="fab fa-medium mr-md-5 mr-3 fa-2x"></i>
+                </a>
             </div>
         </div>
+
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"

@@ -14,6 +14,10 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
 }
 
+.navbar-light .navbar-brand {
+  color: #fff;
+}
+
 .navbar-brand span {
   color: #fed136;
   font-size: 25px;
@@ -66,7 +70,7 @@ nav {
 }
 
 .banner {
-  background-image: url(../../assets/img/designerux.jpg);
+  background-image: url(../../assets/img/designeruxopaco.png);
   text-align: center;
   color: #fff;
   background-repeat: no-repeat;
@@ -115,6 +119,10 @@ nav {
   margin: auto;
   text-align: center;
   padding-top: 30px;
+}
+
+.bg-light {
+  background-color: #212529!important;
 }
 
 /* mobile view */

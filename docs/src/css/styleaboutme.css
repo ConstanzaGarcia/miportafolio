@@ -1,6 +1,5 @@
-
 .banner {
-  background-image: url(../../assets/img/descriptiondesing.jpg);
+  background-image: url(../../assets/img/designeropaco.png);
 }
 
 .pJustify {
@@ -14,6 +13,13 @@
   padding-bottom: 50px;
   text-align: center;
   width: 100%;
+}
+
+.img-fluid perfil {
+  text-align: center;
+  width: 50%;
+  padding: 50px;
+  margin: auto;
 }
 
 /*Pie de pagina con rrss*/
