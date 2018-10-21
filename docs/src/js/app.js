@@ -30,3 +30,10 @@ function registroPersonas() {
 function footer() {
   location.href = "#contacto";
 }
+
+/* Demo purposes only */
+$(".hover").mouseleave(
+  function () {
+    $(this).removeClass("hover");
+  }
+);

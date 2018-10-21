@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Gothic+A1|Kaushan+Script|Libre+Baskerville|Lobster');
+
 .body {
   font-family: 'Gothic A1', sans-serif;
   font-size: 16px;
@@ -9,9 +10,9 @@ p {
   font-size: 1em;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  color: #323233;
-  text-transform: uppercase;
+
+h2{
+  padding-bottom: 3%;
 }
 
 .navbar-light .navbar-brand {
@@ -69,25 +70,33 @@ nav {
   background-color: #212529;
 }
 
-.banner {
-  background-image: url(../../assets/img/designeruxopaco.png);
+.banner{
+  padding: 3% 0;
   text-align: center;
-  color: #fff;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-position: center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  position: relative;
 }
+.banner::after {
+  content: "";
+  background-image: url(../../assets/img/designeropaco.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  opacity: rgba(0,0,0, 0.7);
+  z-index: -1; 
+  position: absolute;  
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
 
 .banner-text {
   padding: 100px 0 100px 0;
 }
 
 .banner-heading {
-  font-family: 'Lobster', cursive;
+  font-family: 'Kaushan Script', cursive;
   font-size: 75px;
   font-weight: 700;
   line-height: 100px;
@@ -104,15 +113,6 @@ nav {
   color: #212529;
 }
 
-.btn-banner {
-  padding: 5px 20px;
-  border-radius: 10px;
-  font-weight: 700;
-  line-height: 1.5;
-  text-align: center;
-  color: #fff;
-  text-transform: uppercase;
-}
 
 .text-intro {
   width: 90%;
@@ -124,6 +124,59 @@ nav {
 .bg-light {
   background-color: #212529!important;
 }
+
+
+
+/*proyectos*/
+
+
+.btn-primary {
+  color: #212529;
+  background-color: #fed136!important;
+  border-color: #fed136!important;
+}
+
+.btn-primary:hover {
+  color: #212529;
+  justify-content: center;
+}
+
+#contenedorProyectos {
+  padding: 7% 0;
+  background-color: #fed136;
+}
+
+.card{
+  width: 20rem;
+  border: 1px solid transparent;
+  min-height: 202px;
+}
+
+
+/*Footer*/
+
+footer {
+  text-align: center;
+  background-color: #212529;
+  padding: 5% 0;
+}
+
+.contact{
+  color: #fff;
+}
+.mail{
+  color: #ffc82c;
+}
+
+.link {
+  color: #fed136;
+}
+
+.link:hover {
+  color: #fff;
+}
+
+
 
 /* mobile view */
 
@@ -148,12 +201,7 @@ nav {
     line-height: 30px;
     margin-bottom: 20px;
   }
-  .banner-sub-heading {
-    font-size: 10px;
-    font-weight: 200;
-    line-height: 10px;
-    margin-bottom: 40px;
-  }
+
 }
 
 @media (max-width:768px) {
@@ -168,39 +216,3 @@ nav {
   }
 }
 
-/*proyectos*/
-
-.btn-primary {
-  color: #212529;
-  background-color: #fed136!important;
-  border-color: #fed136!important;
-}
-
-.btn-primary:hover {
-  color: #212529;
-  justify-content: center;
-}
-
-/*Pie de pagina con rrss*/
-
-footer {
-  text-align: center;
-  background-color: #212529;
-  padding: 1%;
-}
-
-.link {
-  color: #fed136;
-}
-
-.link:hover {
-  color: #fff;
-}
-
-#contenedorProyectos {
-  padding-top: 10px;
-  padding-bottom: 100px;
-  text-align: center;
-  width: 100%;
-  justify-content: space-between;
-}

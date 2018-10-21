@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,7 +12,6 @@
   <link rel="stylesheet" type="text/css" media="all" href="src/css/animate.css">
   <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
   <link rel="stylesheet" href="src/css/style.css">
-
   <title>Constanza García</title>
 </head>
 
@@ -31,7 +29,7 @@
     <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link" href="aboutme.html">Sobre mi</a>
+          <a class="nav-link" href="aboutme.html">Sobre mí</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" id="navbardrop" onclick="aProyectos()">Proyectos</a>
@@ -43,32 +41,30 @@
     </div>
   </nav>
 
-  <div class="banner">
+  <header class="banner">
     <div class="container">
       <div class="banner-text">
         <div class="banner-heading">
           Constanza García
         </div>
-        <div class="banner-sub-heading">
-          Ux Designer y Periodista </div>
-        <button type="button" href="#proyectos" class="btn btn-warning text-dark btn-banner" onclick="aProyectos()">Conoce mi trabajo</button>
+        <h2>Diseñadora UX y Periodista </h2>
+        <button type="button" href="#proyectos" class="btn btn-primary text-dark btn-banner btn-lg" onclick="aProyectos()">Conoce mi trabajo</button>
       </div>
     </div>
-  </div>
+  </header>
 
   <section class="proyectos" id="contenedorProyectos">
     <div class="container">
       <div class="row">
         <div class="col-12">
-          <h2>Proyectos</h2>
-          <p>Revisa cada uno de los proyectos en los que me he desarrollado como diseñadora UX. En todos he puesto todas mis
-            ganas para alcanzar los mejores resultados con mi equipo.</p>
+          <h2 class="text-center">Proyectos</h2>
         </div>
       </div>
+     
       <div class="row">
         <div class="col-md-4">
-          <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="assets/img/marketplacecel.png" alt="Card image cap">
+          <div class="card">
+            <!--<img class="card-img-top" src="assets/img/marketplacecel.png" alt="Card image cap">-->
             <div class="card-body">
               <h5 class="card-title">MarketPlace</h5>
               <p class="card-text">Asesorar a un emprendimiento en la creación de una plataforma de ventas en línea.</p>
@@ -77,8 +73,8 @@
           </div>
         </div>
         <div class="col-md-4">
-          <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="assets/img/fitchappcel.png" alt="Card image cap">
+          <div class="card">
+            <!--<img class="card-img-top" src="assets/img/fitchappcel.png" alt="Card image cap">-->
             <div class="card-body">
               <h5 class="card-title">Fitch APP</h5>
               <p class="card-text">Rediseñar la APP del banco El País y realizar una nueva propuesta de marketing. </p>
@@ -88,41 +84,49 @@
         </div>
 
         <div class="col-md-4">
-          <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="assets/img/celiookcel.png" alt="Card image cap">
+          <div class="card">
+            <!--<img class="card-img-top" src="assets/img/celiookcel.png" alt="Card image cap">-->
             <div class="card-body">
               <h5 class="card-title">Red social</h5>
-              <p class="card-text"> Crear una Red Social que contribuya al bienestar de las personas.</p>
+              <p class="card-text"> Crear una Red Social que contribuya al bienestar de las personas celiacas o con intolerancia al gluten.</p>
               <a href="redsocial.html" class="btn btn-primary">Ver más</a>
             </div>
           </div>
         </div>
-      </div>
+        
+      </div> 
+      
+     
     </div>
   </section>
 
   <footer id="contacto">
-
-    <div class="col-md-12">
-      <div class="mb-5 flex-center">
-        <a class="link" href="https://www.linkedin.com/in/constanza-garcia-madrid/">
-          <i class="fab fa-linkedin mr-md-5 mr-3 fa-2x"></i>
-        </a>
-
-        <a class="link" href="o.conii.o@gmail.com">
-          <i class="fas fa-envelope-square mr-md-5 mr-3 fa-2x"></i>
-        </a>
-
-        <a class="link" href="https://www.twitter.com/abretubocaa">
-          <i class="fab fa-twitter-square mr-md-5 mr-3 fa-2x"></i>
-        </a>
-
-        <a class="link" href="https://medium.com/@ConstanzaGarcia">
-          <i class="fab fa-medium mr-md-5 mr-3 fa-2x"></i>
-        </a>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2 class="contact">Contacto</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6 offset-3">
+          <p class="mail text-center">o.conii.o@gmail.com</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6 offset-3">
+            <a class="link" href="https://www.linkedin.com/in/constanza-garcia-madrid/">
+              <i class="fab fa-linkedin mr-md-5 mr-3 fa-3x"></i>
+            </a>
+            <a class="link" href="https://www.twitter.com/abretubocaa">
+              <i class="fab fa-twitter-square mr-md-5 mr-3 fa-3x"></i>
+            </a>
+    
+            <a class="link" href="https://medium.com/@ConstanzaGarcia">
+              <i class="fab fa-medium mr-md-5 mr-3 fa-3x"></i>
+            </a>
+        </div>
       </div>
     </div>
-
   </footer>
   
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
